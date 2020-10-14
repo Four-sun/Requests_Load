@@ -1,0 +1,58 @@
+2019-07-02 16:24:27,938	line32      	INFO    :2019-07-02-16_24_27	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-02 16:24:28,165	line32      	INFO    :2019-07-02-16_24_27	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 16:24:28,165	line32      	INFO    :SESSION:c5cafcce-fb3a-4880-ae58-ee3e455f560a
+2019-07-02 16:24:28,167	line32      	INFO    :获取到token值：{'SESSION': 'c5cafcce-fb3a-4880-ae58-ee3e455f560a'}
+2019-07-02 16:24:28,657	line38      	WARNING :2019-07-02-16_24_27	方法名：query_product_info	异常原因：tuple index out of range
+2019-07-02 16:24:28,660	line32      	INFO    :用例运行结束  
+2019-07-02 16:25:14,003	line32      	INFO    :2019-07-02-16_25_14	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-02 16:25:14,253	line32      	INFO    :2019-07-02-16_25_14	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 16:25:14,255	line32      	INFO    :SESSION:f78ca41e-0121-4178-bfcb-87a4d52f4170
+2019-07-02 16:25:14,256	line32      	INFO    :获取到token值：{'SESSION': 'f78ca41e-0121-4178-bfcb-87a4d52f4170'}
+2019-07-02 16:25:14,528	line38      	WARNING :2019-07-02-16_25_14	方法名：query_product_info	异常原因：tuple index out of range
+2019-07-02 16:25:14,532	line32      	INFO    :用例运行结束  
+2019-07-02 16:43:46,388	line32      	INFO    :2019-07-02-16_43_46	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-02 16:43:46,641	line32      	INFO    :2019-07-02-16_43_46	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 16:43:46,641	line32      	INFO    :SESSION:c1490e42-972d-46f3-8e04-6f942c706a31
+2019-07-02 16:43:46,644	line32      	INFO    :获取到token值：{'SESSION': 'c1490e42-972d-46f3-8e04-6f942c706a31'}
+2019-07-02 16:43:46,890	line38      	WARNING :2019-07-02-16_43_46	方法名：query_product_info	异常原因：tuple index out of range
+2019-07-02 16:43:46,892	line32      	INFO    :用例运行结束  
+2019-07-02 16:55:41,894	line32      	INFO    :2019-07-02-16_55_41	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-02 16:55:42,210	line32      	INFO    :2019-07-02-16_55_41	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 16:55:42,210	line32      	INFO    :SESSION:39241faf-594f-410b-92e2-de0eb1586c8b
+2019-07-02 16:55:42,213	line32      	INFO    :获取到token值：{'SESSION': '39241faf-594f-410b-92e2-de0eb1586c8b'}
+2019-07-02 16:55:42,459	line32      	INFO    :用例运行结束  
+2019-07-02 16:57:49,256	line32      	INFO    :2019-07-02-16_57_49	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-02 16:57:49,440	line32      	INFO    :2019-07-02-16_57_49	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 16:57:49,440	line32      	INFO    :SESSION:1bc4f8c5-3a1c-4faa-8885-0cd42a80402f
+2019-07-02 16:57:49,444	line32      	INFO    :获取到token值：{'SESSION': '1bc4f8c5-3a1c-4faa-8885-0cd42a80402f'}
+2019-07-02 16:57:49,688	line32      	INFO    :用例运行结束  
+2019-07-02 17:05:03,319	line32      	INFO    :2019-07-02-17_05_03	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-02 17:05:03,546	line32      	INFO    :2019-07-02-17_05_03	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 17:05:03,546	line32      	INFO    :SESSION:176abcdc-1087-4b81-a6c2-27d127691cd6
+2019-07-02 17:05:03,551	line32      	INFO    :获取到token值：{'SESSION': '176abcdc-1087-4b81-a6c2-27d127691cd6'}
+2019-07-02 17:05:03,686	line32      	INFO    :用例运行结束  
+2019-07-02 17:06:02,256	line32      	INFO    :2019-07-02-17_06_02	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-02 17:06:02,500	line32      	INFO    :2019-07-02-17_06_02	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 17:06:02,500	line32      	INFO    :SESSION:b3c9c6e7-81d0-40ce-81d8-c7b1ef4d75cd
+2019-07-02 17:06:02,503	line32      	INFO    :获取到token值：{'SESSION': 'b3c9c6e7-81d0-40ce-81d8-c7b1ef4d75cd'}
+2019-07-02 17:06:02,607	line32      	INFO    :用例运行结束  
+2019-07-02 17:11:21,598	line32      	INFO    :2019-07-02-17_11_21	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-02 17:11:21,809	line32      	INFO    :2019-07-02-17_11_21	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 17:11:21,809	line32      	INFO    :SESSION:e354b890-1e14-4543-8da0-41e2cf80718c
+2019-07-02 17:11:21,812	line32      	INFO    :获取到token值：{'SESSION': 'e354b890-1e14-4543-8da0-41e2cf80718c'}
+2019-07-02 17:11:21,923	line32      	INFO    :用例运行结束  
+2019-07-02 17:13:16,269	line32      	INFO    :2019-07-02-17_13_16	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-02 17:13:16,674	line32      	INFO    :2019-07-02-17_13_16	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 17:13:16,674	line32      	INFO    :SESSION:caaa59f7-b28b-4cc1-bdc8-e53aa364c95b
+2019-07-02 17:13:16,677	line32      	INFO    :获取到token值：{'SESSION': 'caaa59f7-b28b-4cc1-bdc8-e53aa364c95b'}
+2019-07-02 17:13:16,767	line32      	INFO    :用例运行结束  
+2019-07-02 17:14:58,940	line32      	INFO    :2019-07-02-17_14_58	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-02 17:14:59,246	line32      	INFO    :2019-07-02-17_14_58	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 17:14:59,246	line32      	INFO    :SESSION:5fcaffb6-94e7-4773-87d2-637cb0704a27
+2019-07-02 17:14:59,250	line32      	INFO    :获取到token值：{'SESSION': '5fcaffb6-94e7-4773-87d2-637cb0704a27'}
+2019-07-02 17:14:59,374	line32      	INFO    :用例运行结束  
+2019-07-02 17:35:51,359	line32      	INFO    :2019-07-02-17_35_51	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-02 17:35:51,734	line32      	INFO    :2019-07-02-17_35_51	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-02 17:35:51,734	line32      	INFO    :SESSION:9a8e040a-3225-449a-ab7f-0aee8e6fdb61
+2019-07-02 17:35:51,740	line32      	INFO    :获取到token值：{'SESSION': '9a8e040a-3225-449a-ab7f-0aee8e6fdb61'}
+2019-07-02 17:35:51,907	line32      	INFO    :用例运行结束  
