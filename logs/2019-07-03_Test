@@ -1,0 +1,614 @@
+2019-07-03 10:27:49,247	line32      	INFO    :2019-07-03-10_27_49	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 10:27:49,526	line32      	INFO    :2019-07-03-10_27_49	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 10:27:49,526	line32      	INFO    :SESSION:beebbe73-87c5-495a-a871-e6fe4462fd89
+2019-07-03 10:27:49,528	line32      	INFO    :获取到token值：{'SESSION': 'beebbe73-87c5-495a-a871-e6fe4462fd89'}
+2019-07-03 10:27:49,782	line32      	INFO    :用例运行结束  
+2019-07-03 10:53:32,252	line32      	INFO    :2019-07-03-10_53_32	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 10:53:32,667	line32      	INFO    :2019-07-03-10_53_32	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 10:53:32,667	line32      	INFO    :SESSION:e7f63ef7-a8e6-4f0d-8f7a-42bf3ec3061b
+2019-07-03 10:53:32,668	line32      	INFO    :获取到token值：{'SESSION': 'e7f63ef7-a8e6-4f0d-8f7a-42bf3ec3061b'}
+2019-07-03 10:53:32,904	line32      	INFO    :用例运行结束  
+2019-07-03 11:00:18,598	line32      	INFO    :2019-07-03-11_00_18	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 11:00:18,904	line32      	INFO    :2019-07-03-11_00_18	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:00:18,904	line32      	INFO    :SESSION:2bbc3356-5cc4-4038-b6c6-62dcd1ba57c2
+2019-07-03 11:00:18,907	line32      	INFO    :获取到token值：{'SESSION': '2bbc3356-5cc4-4038-b6c6-62dcd1ba57c2'}
+2019-07-03 11:00:19,144	line32      	INFO    :用例运行结束  
+2019-07-03 11:01:16,581	line32      	INFO    :2019-07-03-11_01_16	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 11:01:16,914	line32      	INFO    :2019-07-03-11_01_16	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:01:16,914	line32      	INFO    :SESSION:46b2d148-8a00-4c90-9972-6dae9d7c9a27
+2019-07-03 11:01:16,918	line32      	INFO    :获取到token值：{'SESSION': '46b2d148-8a00-4c90-9972-6dae9d7c9a27'}
+2019-07-03 11:01:18,334	line32      	INFO    :%s	方法名：%s	 图片返回URL地址：%s
+2019-07-03 11:01:18,334	line38      	WARNING :2019-07-03-11_01_16	方法名：operation_picture_upload	异常原因：unsupported operand type(s) for %: 'NoneType' and 'tuple'
+2019-07-03 11:01:18,334	line38      	WARNING :2019-07-03-11_01_16	方法名：saveProduct	异常原因：unsupported operand type(s) for %: 'NoneType' and 'tuple'
+2019-07-03 11:01:18,335	line32      	INFO    :用例运行结束  
+2019-07-03 11:02:02,056	line32      	INFO    :2019-07-03-11_02_02	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 11:02:02,339	line32      	INFO    :2019-07-03-11_02_02	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:02:02,339	line32      	INFO    :SESSION:fc4b816d-a36b-4391-91e6-07e4d86b1ca2
+2019-07-03 11:02:02,342	line32      	INFO    :获取到token值：{'SESSION': 'fc4b816d-a36b-4391-91e6-07e4d86b1ca2'}
+2019-07-03 11:02:03,737	line32      	INFO    :用例运行结束  
+2019-07-03 11:08:11,861	line32      	INFO    :2019-07-03-11_08_11	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 11:08:12,101	line32      	INFO    :2019-07-03-11_08_11	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:08:12,101	line32      	INFO    :SESSION:eb787575-267e-4984-b31d-af06fa114ccc
+2019-07-03 11:08:12,102	line32      	INFO    :获取到token值：{'SESSION': 'eb787575-267e-4984-b31d-af06fa114ccc'}
+2019-07-03 11:08:13,497	line32      	INFO    :用例运行结束  
+2019-07-03 11:09:10,871	line32      	INFO    :2019-07-03-11_09_10	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 11:09:11,117	line32      	INFO    :2019-07-03-11_09_10	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:09:11,118	line32      	INFO    :SESSION:5c56dd53-a407-4041-a02b-5e405479e96e
+2019-07-03 11:09:11,121	line32      	INFO    :获取到token值：{'SESSION': '5c56dd53-a407-4041-a02b-5e405479e96e'}
+2019-07-03 11:09:12,601	line32      	INFO    :用例运行结束  
+2019-07-03 11:15:04,279	line32      	INFO    :2019-07-03-11_15_04	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 11:15:04,556	line32      	INFO    :2019-07-03-11_15_04	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:15:04,556	line32      	INFO    :SESSION:45f274a5-b163-4112-ac7f-8861adb448b5
+2019-07-03 11:15:04,561	line32      	INFO    :获取到token值：{'SESSION': '45f274a5-b163-4112-ac7f-8861adb448b5'}
+2019-07-03 11:15:04,811	line32      	INFO    :2019-07-03-11_15_04	{'product_price': '1493', 'product_id': '100399867', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 11:15:06,405	line32      	INFO    :用例运行结束  
+2019-07-03 11:17:42,880	line32      	INFO    :2019-07-03-11_17_42	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 11:17:43,125	line32      	INFO    :2019-07-03-11_17_42	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:17:43,125	line32      	INFO    :SESSION:7e624c1b-881d-4136-a385-1621e4698505
+2019-07-03 11:17:43,131	line32      	INFO    :获取到token值：{'SESSION': '7e624c1b-881d-4136-a385-1621e4698505'}
+2019-07-03 11:17:43,375	line32      	INFO    :用例运行结束  
+2019-07-03 11:18:50,947	line32      	INFO    :2019-07-03-11_18_50	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 11:18:51,210	line32      	INFO    :2019-07-03-11_18_50	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:18:51,210	line32      	INFO    :SESSION:7290863b-6654-48fe-b0f0-9135e3656417
+2019-07-03 11:18:51,213	line32      	INFO    :获取到token值：{'SESSION': '7290863b-6654-48fe-b0f0-9135e3656417'}
+2019-07-03 11:18:51,440	line32      	INFO    :2019-07-03-11_18_50	[['商品名称', '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'], ['型号', 'M1-L202B'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['实际容量', '20L']]
+2019-07-03 11:18:51,441	line32      	INFO    :用例运行结束  
+2019-07-03 11:20:19,848	line32      	INFO    :2019-07-03-11_20_19	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 11:20:20,107	line32      	INFO    :2019-07-03-11_20_19	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:20:20,107	line32      	INFO    :SESSION:9d0a03f4-56ce-4dba-8133-53d25049c9c9
+2019-07-03 11:20:20,111	line32      	INFO    :获取到token值：{'SESSION': '9d0a03f4-56ce-4dba-8133-53d25049c9c9'}
+2019-07-03 11:20:20,348	line32      	INFO    :2019-07-03-11_20_19	[['商品名称', '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'], ['型号', 'M1-L202B'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['实际容量', '20L']]
+2019-07-03 11:20:20,348	line32      	INFO    :用例运行结束  
+2019-07-03 11:36:25,026	line32      	INFO    :2019-07-03-11_36_25	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 11:36:25,334	line32      	INFO    :2019-07-03-11_36_25	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:36:25,334	line32      	INFO    :SESSION:57f59b07-d275-4ef6-ab14-48c284e3045a
+2019-07-03 11:36:25,338	line32      	INFO    :获取到token值：{'SESSION': '57f59b07-d275-4ef6-ab14-48c284e3045a'}
+2019-07-03 11:36:25,573	line32      	INFO    :2019-07-03-11_36_25	[['商品名称', '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'], ['型号', 'M1-L202B'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['实际容量', '20L']]
+2019-07-03 11:36:25,823	line32      	INFO    :2019-07-03-11_36_25	[['商品名称', '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'], ['型号', 'M1-L202B'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['实际容量', '20L']]
+2019-07-03 11:36:25,825	line38      	WARNING :2019-07-03-11_36_25	方法名：saveProductParamet	异常原因：%d format: a number is required, not NoneType
+2019-07-03 11:36:25,826	line32      	INFO    :用例运行结束  
+2019-07-03 11:37:00,926	line32      	INFO    :2019-07-03-11_37_00	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 11:37:01,203	line32      	INFO    :2019-07-03-11_37_00	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:37:01,203	line32      	INFO    :SESSION:a7c8676d-b8e1-45bb-88bc-15e50ae213d0
+2019-07-03 11:37:01,206	line32      	INFO    :获取到token值：{'SESSION': 'a7c8676d-b8e1-45bb-88bc-15e50ae213d0'}
+2019-07-03 11:37:01,438	line32      	INFO    :2019-07-03-11_37_00	[['商品名称', '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'], ['型号', 'M1-L202B'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['实际容量', '20L']]
+2019-07-03 11:37:01,684	line32      	INFO    :2019-07-03-11_37_00	[['商品名称', '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'], ['型号', 'M1-L202B'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['实际容量', '20L']]
+2019-07-03 11:37:01,686	line32      	INFO    :用例运行结束  
+2019-07-03 11:37:35,342	line32      	INFO    :2019-07-03-11_37_35	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 11:37:35,627	line32      	INFO    :2019-07-03-11_37_35	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:37:35,627	line32      	INFO    :SESSION:c36c860e-3af6-40e0-a51b-b1341518c4e2
+2019-07-03 11:37:35,628	line32      	INFO    :获取到token值：{'SESSION': 'c36c860e-3af6-40e0-a51b-b1341518c4e2'}
+2019-07-03 11:37:35,884	line32      	INFO    :2019-07-03-11_37_35	[['商品名称', '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'], ['型号', 'M1-L202B'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['实际容量', '20L']]
+2019-07-03 11:37:36,335	line32      	INFO    :用例运行结束  
+2019-07-03 11:40:52,233	line32      	INFO    :2019-07-03-11_40_52	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 11:40:52,680	line32      	INFO    :2019-07-03-11_40_52	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:40:52,680	line32      	INFO    :SESSION:0cf340c8-3090-4479-9b97-8d324fbb456f
+2019-07-03 11:40:52,684	line32      	INFO    :获取到token值：{'SESSION': '0cf340c8-3090-4479-9b97-8d324fbb456f'}
+2019-07-03 11:40:52,941	line32      	INFO    :用例运行结束  
+2019-07-03 11:42:17,378	line32      	INFO    :2019-07-03-11_42_17	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 11:42:17,638	line32      	INFO    :2019-07-03-11_42_17	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:42:17,638	line32      	INFO    :SESSION:aa27be8a-1649-43db-a40b-be90ae9ab2a3
+2019-07-03 11:42:17,640	line32      	INFO    :获取到token值：{'SESSION': 'aa27be8a-1649-43db-a40b-be90ae9ab2a3'}
+2019-07-03 11:42:17,996	line32      	INFO    :用例运行结束  
+2019-07-03 11:43:22,628	line32      	INFO    :2019-07-03-11_43_22	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 11:43:22,947	line32      	INFO    :2019-07-03-11_43_22	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 11:43:22,947	line32      	INFO    :SESSION:c14023b5-4b93-47da-98a2-a67a2e473071
+2019-07-03 11:43:22,948	line32      	INFO    :获取到token值：{'SESSION': 'c14023b5-4b93-47da-98a2-a67a2e473071'}
+2019-07-03 11:43:23,049	line32      	INFO    :用例运行结束  
+2019-07-03 13:46:35,470	line32      	INFO    :2019-07-03-13_46_35	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 13:46:35,773	line32      	INFO    :2019-07-03-13_46_35	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 13:46:35,773	line32      	INFO    :SESSION:148bfd9b-f2aa-41fc-98ed-36472ddfa570
+2019-07-03 13:46:35,776	line32      	INFO    :获取到token值：{'SESSION': '148bfd9b-f2aa-41fc-98ed-36472ddfa570'}
+2019-07-03 13:46:35,996	line32      	INFO    :2019-07-03-13_46_35	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 13:46:36,042	line32      	INFO    :2019-07-03-13_46_35	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 13:46:36,151	line32      	INFO    :用例运行结束  
+2019-07-03 13:46:36,283	line32      	INFO    :2019-07-03-13_46_35	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 13:46:36,283	line32      	INFO    :SESSION:23c99c7d-82e6-4c47-9360-a5c57126f21b
+2019-07-03 13:46:36,312	line32      	INFO    :获取到token值：{'SESSION': '23c99c7d-82e6-4c47-9360-a5c57126f21b'}
+2019-07-03 13:46:36,562	line32      	INFO    :2019-07-03-13_46_35	{'product_price': '1493', 'product_id': '100399867', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 13:46:36,667	line32      	INFO    :用例运行结束  
+2019-07-03 13:49:13,885	line32      	INFO    :2019-07-03-13_49_13	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 13:49:14,094	line32      	INFO    :2019-07-03-13_49_13	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 13:49:14,094	line32      	INFO    :SESSION:58616ed0-1b0a-4a99-b34a-9bd24f34d75f
+2019-07-03 13:49:14,098	line32      	INFO    :获取到token值：{'SESSION': '58616ed0-1b0a-4a99-b34a-9bd24f34d75f'}
+2019-07-03 13:49:14,352	line32      	INFO    :2019-07-03-13_49_13	{'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_id': '100399867', 'product_price': '1493'}
+2019-07-03 13:49:14,441	line32      	INFO    :用例运行结束  
+2019-07-03 13:57:15,309	line32      	INFO    :2019-07-03-13_57_15	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 13:57:15,619	line32      	INFO    :2019-07-03-13_57_15	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 13:57:15,619	line32      	INFO    :SESSION:ab880fc9-1d40-4844-9aaa-70fd87388aa7
+2019-07-03 13:57:15,622	line32      	INFO    :获取到token值：{'SESSION': 'ab880fc9-1d40-4844-9aaa-70fd87388aa7'}
+2019-07-03 13:57:15,888	line32      	INFO    :2019-07-03-13_57_15	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 13:57:15,987	line38      	WARNING :2019-07-03-13_57_15	方法名：saveProductSku	异常原因：'NoneType' object is not subscriptable
+2019-07-03 13:57:15,989	line32      	INFO    :用例运行结束  
+2019-07-03 13:57:39,578	line32      	INFO    :2019-07-03-13_57_39	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 13:57:40,030	line32      	INFO    :2019-07-03-13_57_39	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 13:57:40,030	line32      	INFO    :SESSION:fcbc9765-8f11-4611-9259-0cfa01b4b75d
+2019-07-03 13:57:40,032	line32      	INFO    :获取到token值：{'SESSION': 'fcbc9765-8f11-4611-9259-0cfa01b4b75d'}
+2019-07-03 13:57:40,278	line32      	INFO    :2019-07-03-13_57_39	{'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_id': '100399867', 'product_price': '1493'}
+2019-07-03 13:57:40,368	line38      	WARNING :2019-07-03-13_57_39	方法名：saveProductSku	异常原因：'NoneType' object is not subscriptable
+2019-07-03 13:57:40,369	line32      	INFO    :用例运行结束  
+2019-07-03 13:57:55,908	line32      	INFO    :2019-07-03-13_57_55	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 13:57:56,206	line32      	INFO    :2019-07-03-13_57_55	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 13:57:56,207	line32      	INFO    :SESSION:355a6fe5-50e2-45b2-a8f1-43e48819fb51
+2019-07-03 13:57:56,210	line32      	INFO    :获取到token值：{'SESSION': '355a6fe5-50e2-45b2-a8f1-43e48819fb51'}
+2019-07-03 13:57:56,447	line32      	INFO    :2019-07-03-13_57_55	{'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_id': '100399867'}
+2019-07-03 13:57:56,549	line38      	WARNING :2019-07-03-13_57_55	方法名：saveProductSku	异常原因：'NoneType' object is not subscriptable
+2019-07-03 13:57:56,551	line32      	INFO    :用例运行结束  
+2019-07-03 13:58:58,961	line32      	INFO    :2019-07-03-13_58_58	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 13:58:59,214	line32      	INFO    :2019-07-03-13_58_58	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 13:58:59,214	line32      	INFO    :SESSION:0192e455-7c94-4293-93af-c5091419e99e
+2019-07-03 13:58:59,219	line32      	INFO    :获取到token值：{'SESSION': '0192e455-7c94-4293-93af-c5091419e99e'}
+2019-07-03 13:58:59,470	line32      	INFO    :2019-07-03-13_58_58	{'product_id': '100399867', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_price': '1493'}
+2019-07-03 13:58:59,573	line38      	WARNING :2019-07-03-13_58_58	方法名：saveProductSku	异常原因：'NoneType' object is not subscriptable
+2019-07-03 13:58:59,575	line32      	INFO    :用例运行结束  
+2019-07-03 14:00:05,638	line32      	INFO    :2019-07-03-14_00_05	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:00:05,875	line32      	INFO    :2019-07-03-14_00_05	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:00:05,875	line32      	INFO    :SESSION:9086719c-ef2d-4d9f-814f-db54aedb1bff
+2019-07-03 14:00:05,880	line32      	INFO    :获取到token值：{'SESSION': '9086719c-ef2d-4d9f-814f-db54aedb1bff'}
+2019-07-03 14:00:06,121	line32      	INFO    :2019-07-03-14_00_05	{'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_id': '100399867'}
+2019-07-03 14:00:06,220	line38      	WARNING :2019-07-03-14_00_05	方法名：saveProductSku	异常原因：'NoneType' object is not subscriptable
+2019-07-03 14:00:06,221	line32      	INFO    :用例运行结束  
+2019-07-03 14:00:48,618	line32      	INFO    :2019-07-03-14_00_48	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:00:48,836	line32      	INFO    :2019-07-03-14_00_48	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:00:48,836	line32      	INFO    :SESSION:9a1a8130-1d74-4b5f-8c4c-731f3e7cbd11
+2019-07-03 14:00:48,841	line32      	INFO    :获取到token值：{'SESSION': '9a1a8130-1d74-4b5f-8c4c-731f3e7cbd11'}
+2019-07-03 14:00:49,079	line32      	INFO    :2019-07-03-14_00_48	{'product_id': '100399867', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_price': '1493'}
+2019-07-03 14:00:49,178	line38      	WARNING :2019-07-03-14_00_48	方法名：saveProductSku	异常原因：the JSON object must be str, not 'NoneType'
+2019-07-03 14:00:49,187	line32      	INFO    :用例运行结束  
+2019-07-03 14:02:02,943	line32      	INFO    :2019-07-03-14_02_02	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:02:03,177	line32      	INFO    :2019-07-03-14_02_02	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:02:03,177	line32      	INFO    :SESSION:4ab9c36b-0168-49eb-955a-34f52d5a9c2c
+2019-07-03 14:02:03,181	line32      	INFO    :获取到token值：{'SESSION': '4ab9c36b-0168-49eb-955a-34f52d5a9c2c'}
+2019-07-03 14:02:03,424	line32      	INFO    :2019-07-03-14_02_02	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 14:02:03,513	line38      	WARNING :2019-07-03-14_02_02	方法名：saveProductSku	异常原因：'NoneType' object is not subscriptable
+2019-07-03 14:02:03,515	line32      	INFO    :用例运行结束  
+2019-07-03 14:02:50,619	line32      	INFO    :2019-07-03-14_02_50	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:02:50,950	line32      	INFO    :2019-07-03-14_02_50	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:02:50,950	line32      	INFO    :SESSION:c82a82f6-3a07-4533-ae9a-0c2465f3627f
+2019-07-03 14:02:50,957	line32      	INFO    :获取到token值：{'SESSION': 'c82a82f6-3a07-4533-ae9a-0c2465f3627f'}
+2019-07-03 14:02:51,191	line32      	INFO    :2019-07-03-14_02_50	{'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_id': '100399867', 'product_price': '1493'}
+2019-07-03 14:02:51,302	line38      	WARNING :2019-07-03-14_02_50	方法名：saveProductSku	异常原因：'NoneType' object is not subscriptable
+2019-07-03 14:02:51,305	line32      	INFO    :用例运行结束  
+2019-07-03 14:06:01,167	line32      	INFO    :2019-07-03-14_06_01	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 14:06:01,562	line32      	INFO    :2019-07-03-14_06_01	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:06:01,562	line32      	INFO    :SESSION:92ed71a5-1d4f-4e98-a90d-fa1522df86b6
+2019-07-03 14:06:01,565	line32      	INFO    :获取到token值：{'SESSION': '92ed71a5-1d4f-4e98-a90d-fa1522df86b6'}
+2019-07-03 14:06:01,799	line32      	INFO    :2019-07-03-14_06_01	{'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_id': '100399867'}
+2019-07-03 14:06:01,891	line38      	WARNING :2019-07-03-14_06_01	方法名：saveProductSku	异常原因：'NoneType' object has no attribute 'text'
+2019-07-03 14:06:01,892	line32      	INFO    :用例运行结束  
+2019-07-03 14:06:17,875	line32      	INFO    :2019-07-03-14_06_17	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:06:18,244	line32      	INFO    :2019-07-03-14_06_17	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:06:18,244	line32      	INFO    :SESSION:854674a6-9608-4d48-87d2-c7a0571538ff
+2019-07-03 14:06:18,249	line32      	INFO    :获取到token值：{'SESSION': '854674a6-9608-4d48-87d2-c7a0571538ff'}
+2019-07-03 14:06:18,510	line32      	INFO    :2019-07-03-14_06_17	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 14:06:18,604	line38      	WARNING :2019-07-03-14_06_17	方法名：saveProductSku	异常原因：the JSON object must be str, not 'NoneType'
+2019-07-03 14:06:18,605	line32      	INFO    :用例运行结束  
+2019-07-03 14:08:20,289	line32      	INFO    :2019-07-03-14_08_20	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:08:20,562	line32      	INFO    :2019-07-03-14_08_20	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:08:20,562	line32      	INFO    :SESSION:b546a780-975e-46f0-8e4c-b72539f409d1
+2019-07-03 14:08:20,565	line32      	INFO    :获取到token值：{'SESSION': 'b546a780-975e-46f0-8e4c-b72539f409d1'}
+2019-07-03 14:08:20,812	line32      	INFO    :2019-07-03-14_08_20	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 14:08:20,913	line38      	WARNING :2019-07-03-14_08_20	方法名：saveProductSku	异常原因：the JSON object must be str, not 'NoneType'
+2019-07-03 14:08:20,914	line32      	INFO    :用例运行结束  
+2019-07-03 14:12:49,355	line32      	INFO    :2019-07-03-14_12_49	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:12:49,750	line32      	INFO    :2019-07-03-14_12_49	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:12:49,750	line32      	INFO    :SESSION:362bee87-3e13-46e8-a6d3-85a781483bb9
+2019-07-03 14:12:49,755	line32      	INFO    :获取到token值：{'SESSION': '362bee87-3e13-46e8-a6d3-85a781483bb9'}
+2019-07-03 14:12:50,017	line32      	INFO    :2019-07-03-14_12_49	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 14:12:50,107	line38      	WARNING :2019-07-03-14_12_49	方法名：saveProductSku	异常原因：string indices must be integers
+2019-07-03 14:12:50,108	line32      	INFO    :用例运行结束  
+2019-07-03 14:13:05,845	line32      	INFO    :2019-07-03-14_13_05	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:13:06,155	line32      	INFO    :2019-07-03-14_13_05	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:13:06,157	line32      	INFO    :SESSION:fdeec929-1c19-4066-a5de-8cc060949c26
+2019-07-03 14:13:06,158	line32      	INFO    :获取到token值：{'SESSION': 'fdeec929-1c19-4066-a5de-8cc060949c26'}
+2019-07-03 14:13:06,424	line32      	INFO    :2019-07-03-14_13_05	{'product_id': '100399867', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_price': '1493'}
+2019-07-03 14:13:06,515	line38      	WARNING :2019-07-03-14_13_05	方法名：saveProductSku	异常原因：string indices must be integers
+2019-07-03 14:13:06,516	line32      	INFO    :用例运行结束  
+2019-07-03 14:13:24,790	line32      	INFO    :2019-07-03-14_13_24	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 14:13:25,003	line32      	INFO    :2019-07-03-14_13_24	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:13:25,003	line32      	INFO    :SESSION:0978c5bb-6910-427a-96ce-14b41058fa2a
+2019-07-03 14:13:25,007	line32      	INFO    :获取到token值：{'SESSION': '0978c5bb-6910-427a-96ce-14b41058fa2a'}
+2019-07-03 14:13:25,273	line32      	INFO    :2019-07-03-14_13_24	{'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_id': '100399867', 'product_price': '1493'}
+2019-07-03 14:13:25,368	line38      	WARNING :2019-07-03-14_13_24	方法名：saveProductSku	异常原因：string indices must be integers
+2019-07-03 14:13:25,369	line32      	INFO    :用例运行结束  
+2019-07-03 14:14:38,904	line32      	INFO    :2019-07-03-14_14_38	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:14:39,180	line32      	INFO    :2019-07-03-14_14_38	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:14:39,180	line32      	INFO    :SESSION:defdbafb-2f3d-4175-9357-f82d94c8b940
+2019-07-03 14:14:39,181	line32      	INFO    :获取到token值：{'SESSION': 'defdbafb-2f3d-4175-9357-f82d94c8b940'}
+2019-07-03 14:14:39,436	line32      	INFO    :2019-07-03-14_14_38	{'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_price': '1493', 'product_id': '100399867'}
+2019-07-03 14:14:39,529	line38      	WARNING :2019-07-03-14_14_38	方法名：saveProductSku	异常原因：get expected at least 1 arguments, got 0
+2019-07-03 14:14:39,529	line32      	INFO    :用例运行结束  
+2019-07-03 14:15:02,540	line32      	INFO    :2019-07-03-14_15_02	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 14:15:03,026	line32      	INFO    :2019-07-03-14_15_02	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:15:03,026	line32      	INFO    :SESSION:e2d5fb2a-cd78-464a-bcc2-887eee30971c
+2019-07-03 14:15:03,028	line32      	INFO    :获取到token值：{'SESSION': 'e2d5fb2a-cd78-464a-bcc2-887eee30971c'}
+2019-07-03 14:15:03,256	line32      	INFO    :2019-07-03-14_15_02	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 14:15:03,361	line32      	INFO    :用例运行结束  
+2019-07-03 14:15:54,711	line32      	INFO    :2019-07-03-14_15_54	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:15:55,089	line32      	INFO    :2019-07-03-14_15_54	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:15:55,089	line32      	INFO    :SESSION:54abf297-f888-4fcb-accb-0dc07b6c0243
+2019-07-03 14:15:55,094	line32      	INFO    :获取到token值：{'SESSION': '54abf297-f888-4fcb-accb-0dc07b6c0243'}
+2019-07-03 14:15:55,339	line32      	INFO    :2019-07-03-14_15_54	{'product_id': '100399867', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_price': '1493'}
+2019-07-03 14:15:55,440	line32      	INFO    :用例运行结束  
+2019-07-03 14:16:20,746	line32      	INFO    :2019-07-03-14_16_20	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 14:16:21,049	line32      	INFO    :2019-07-03-14_16_20	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:16:21,049	line32      	INFO    :SESSION:285c2898-f326-4324-9808-9e4b55557843
+2019-07-03 14:16:21,053	line32      	INFO    :获取到token值：{'SESSION': '285c2898-f326-4324-9808-9e4b55557843'}
+2019-07-03 14:16:21,322	line32      	INFO    :2019-07-03-14_16_20	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 14:16:21,421	line38      	WARNING :2019-07-03-14_16_20	方法名：saveProductSku	异常原因：'list' object has no attribute 'get'
+2019-07-03 14:16:21,424	line32      	INFO    :用例运行结束  
+2019-07-03 14:16:28,605	line32      	INFO    :2019-07-03-14_16_28	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:16:28,832	line32      	INFO    :2019-07-03-14_16_28	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:16:28,834	line32      	INFO    :SESSION:c04b013b-58dc-4d6c-850c-c22b2486cbe0
+2019-07-03 14:16:28,835	line32      	INFO    :获取到token值：{'SESSION': 'c04b013b-58dc-4d6c-850c-c22b2486cbe0'}
+2019-07-03 14:16:29,069	line32      	INFO    :2019-07-03-14_16_28	{'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆', 'product_price': '1493', 'product_id': '100399867'}
+2019-07-03 14:16:29,167	line32      	INFO    :用例运行结束  
+2019-07-03 14:22:08,348	line32      	INFO    :2019-07-03-14_22_08	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 14:22:08,648	line32      	INFO    :2019-07-03-14_22_08	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 14:22:08,648	line32      	INFO    :SESSION:8eda13bd-39f3-4d09-8316-6bf267bae84f
+2019-07-03 14:22:08,651	line32      	INFO    :获取到token值：{'SESSION': '8eda13bd-39f3-4d09-8316-6bf267bae84f'}
+2019-07-03 14:22:08,921	line32      	INFO    :2019-07-03-14_22_08	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 14:22:09,023	line32      	INFO    :用例运行结束  
+2019-07-03 14:48:11,739	line38      	WARNING :2019-07-03-14_48_11	方法名：operation_picture_upload	异常原因：[Errno 2] No such file or directory: 'D:\\pycharm-5.0.4\\spitle_photo\\mzitu\\1'
+2019-07-03 15:06:27,938	line32      	INFO    :2019-07-03-15_06_27	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 15:06:28,198	line32      	INFO    :2019-07-03-15_06_27	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 15:06:28,200	line32      	INFO    :SESSION:4622362b-1b1f-4f2a-90e3-b0badaa73150
+2019-07-03 15:06:28,203	line32      	INFO    :获取到token值：{'SESSION': '4622362b-1b1f-4f2a-90e3-b0badaa73150'}
+2019-07-03 15:06:28,461	line32      	INFO    :2019-07-03-15_06_27	{'product_id': '100399867', 'product_price': '1493', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 15:06:28,822	line32      	INFO    :用例运行结束  
+2019-07-03 15:07:13,318	line32      	INFO    :2019-07-03-15_07_13	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 15:07:13,585	line32      	INFO    :2019-07-03-15_07_13	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 15:07:13,585	line32      	INFO    :SESSION:f0c379e8-5284-4242-ad2d-f6c656cd42b9
+2019-07-03 15:07:13,588	line32      	INFO    :获取到token值：{'SESSION': 'f0c379e8-5284-4242-ad2d-f6c656cd42b9'}
+2019-07-03 15:07:13,822	line32      	INFO    :2019-07-03-15_07_13	{'product_price': '1493', 'product_id': '100399867', 'product_name': '美的(Midea) M1-L202B 微波炉 20L 平板加热 一键启动 多角度反射内胆'}
+2019-07-03 15:07:14,334	line32      	INFO    :用例运行结束  
+2019-07-03 15:22:42,756	line32      	INFO    :2019-07-03-15_22_42	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 15:22:43,105	line32      	INFO    :2019-07-03-15_22_42	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 15:22:43,105	line32      	INFO    :SESSION:501dc48d-44e2-4395-9a34-31c9756bc759
+2019-07-03 15:22:43,111	line32      	INFO    :获取到token值：{'SESSION': '501dc48d-44e2-4395-9a34-31c9756bc759'}
+2019-07-03 15:22:43,247	line32      	INFO    :用例运行结束  
+2019-07-03 15:44:57,986	line32      	INFO    :2019-07-03-15_44_57	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 15:44:58,269	line32      	INFO    :2019-07-03-15_44_57	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 15:44:58,269	line32      	INFO    :SESSION:eab217f8-633b-4e3e-8a3d-7f2ab8ac9571
+2019-07-03 15:44:58,272	line32      	INFO    :获取到token值：{'SESSION': 'eab217f8-633b-4e3e-8a3d-7f2ab8ac9571'}
+2019-07-03 15:44:58,519	line32      	INFO    :2019-07-03-15_44_57	{'product_price': '1067', 'product_name': '美的(Midea) M1-211A 微波炉 21L 精准控温 旋钮操控 五档火力 360°转盘加热', 'product_id': '100312207'}
+2019-07-03 15:44:59,878	line32      	INFO    :用例运行结束  
+2019-07-03 16:06:42,753	line32      	INFO    :2019-07-03-16_06_42	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:06:43,102	line32      	INFO    :2019-07-03-16_06_42	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:06:43,102	line32      	INFO    :SESSION:48e0e5e1-9781-4871-96a1-2d6dd0fbc2b2
+2019-07-03 16:06:43,107	line32      	INFO    :获取到token值：{'SESSION': '48e0e5e1-9781-4871-96a1-2d6dd0fbc2b2'}
+2019-07-03 16:06:43,367	line32      	INFO    :2019-07-03-16_06_42	[['商品名称', '格兰仕(Galanz) G80F23CN1L -SD( SO ) 家用 大火力 微波炉 快速解冻 QQ蒸汽 银灰色'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G80F23CN1L-SD-SO'], ['操控方式', '电脑版'], ['底盘类型', '其他'], ['内胆材质', '纳米银内胆'], ['实际容量', '23L']]
+2019-07-03 16:06:43,368	line38      	WARNING :2019-07-03-16_06_42	方法名：saveProductParamet	异常原因：'operation_saveProduct' object has no attribute 'productId'
+2019-07-03 16:06:43,368	line32      	INFO    :用例运行结束  
+2019-07-03 16:09:00,937	line32      	INFO    :2019-07-03-16_09_00	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:09:01,134	line32      	INFO    :2019-07-03-16_09_00	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:09:01,135	line32      	INFO    :SESSION:5ee2fcc0-6ef6-4517-be4c-aa060bd93456
+2019-07-03 16:09:01,140	line32      	INFO    :获取到token值：{'SESSION': '5ee2fcc0-6ef6-4517-be4c-aa060bd93456'}
+2019-07-03 16:09:01,403	line32      	INFO    :2019-07-03-16_09_00	[['商品名称', '格兰仕(Galanz) G80F23CN1L -SD( SO ) 家用 大火力 微波炉 快速解冻 QQ蒸汽 银灰色'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G80F23CN1L-SD-SO'], ['操控方式', '电脑版'], ['底盘类型', '其他'], ['内胆材质', '纳米银内胆'], ['实际容量', '23L']]
+2019-07-03 16:09:01,404	line38      	WARNING :2019-07-03-16_09_00	方法名：saveProductParamet	异常原因：'productId'
+2019-07-03 16:09:01,405	line32      	INFO    :用例运行结束  
+2019-07-03 16:12:32,769	line32      	INFO    :2019-07-03-16_12_32	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:12:33,138	line32      	INFO    :2019-07-03-16_12_32	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:12:33,138	line32      	INFO    :SESSION:1eea37ce-f9d8-4e42-b7f8-bceeee4ae4ba
+2019-07-03 16:12:33,141	line32      	INFO    :获取到token值：{'SESSION': '1eea37ce-f9d8-4e42-b7f8-bceeee4ae4ba'}
+2019-07-03 16:12:33,384	line32      	INFO    :2019-07-03-16_12_32	[['商品名称', '格兰仕(Galanz) G80F23CN1L -SD( SO ) 家用 大火力 微波炉 快速解冻 QQ蒸汽 银灰色'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G80F23CN1L-SD-SO'], ['操控方式', '电脑版'], ['底盘类型', '其他'], ['内胆材质', '纳米银内胆'], ['实际容量', '23L']]
+2019-07-03 16:12:33,384	line38      	WARNING :2019-07-03-16_12_32	方法名：saveProductParamet	异常原因：%d format: a number is required, not list
+2019-07-03 16:12:33,387	line32      	INFO    :用例运行结束  
+2019-07-03 16:14:09,096	line32      	INFO    :2019-07-03-16_14_09	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:14:09,335	line32      	INFO    :2019-07-03-16_14_09	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:14:09,335	line32      	INFO    :SESSION:72eaaef3-196a-47fe-943e-aebf51568b11
+2019-07-03 16:14:09,339	line32      	INFO    :获取到token值：{'SESSION': '72eaaef3-196a-47fe-943e-aebf51568b11'}
+2019-07-03 16:14:09,571	line32      	INFO    :2019-07-03-16_14_09	[['商品名称', '格兰仕(Galanz) G80F23CN1L -SD( SO ) 家用 大火力 微波炉 快速解冻 QQ蒸汽 银灰色'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G80F23CN1L-SD-SO'], ['操控方式', '电脑版'], ['底盘类型', '其他'], ['内胆材质', '纳米银内胆'], ['实际容量', '23L']]
+2019-07-03 16:14:09,572	line38      	WARNING :2019-07-03-16_14_09	方法名：saveProductParamet	异常原因：%d format: a number is required, not list
+2019-07-03 16:14:09,573	line32      	INFO    :用例运行结束  
+2019-07-03 16:14:29,240	line32      	INFO    :2019-07-03-16_14_29	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:14:29,575	line32      	INFO    :2019-07-03-16_14_29	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:14:29,575	line32      	INFO    :SESSION:5eb1c5df-2ca7-4ea4-be3a-515df17485c5
+2019-07-03 16:14:29,578	line32      	INFO    :获取到token值：{'SESSION': '5eb1c5df-2ca7-4ea4-be3a-515df17485c5'}
+2019-07-03 16:14:29,809	line32      	INFO    :2019-07-03-16_14_29	[['商品名称', '格兰仕(Galanz) G80F23CN1L -SD( SO ) 家用 大火力 微波炉 快速解冻 QQ蒸汽 银灰色'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G80F23CN1L-SD-SO'], ['操控方式', '电脑版'], ['底盘类型', '其他'], ['内胆材质', '纳米银内胆'], ['实际容量', '23L']]
+2019-07-03 16:14:29,809	line38      	WARNING :2019-07-03-16_14_29	方法名：saveProductParamet	异常原因：list index out of range
+2019-07-03 16:14:29,812	line32      	INFO    :用例运行结束  
+2019-07-03 16:15:04,210	line32      	INFO    :2019-07-03-16_15_04	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:15:04,463	line32      	INFO    :2019-07-03-16_15_04	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:15:04,463	line32      	INFO    :SESSION:3ff5f7d1-cb2f-41d9-a95e-d33f6dd9c545
+2019-07-03 16:15:04,467	line32      	INFO    :获取到token值：{'SESSION': '3ff5f7d1-cb2f-41d9-a95e-d33f6dd9c545'}
+2019-07-03 16:15:04,467	line32      	INFO    :用例运行结束  
+2019-07-03 16:18:45,970	line32      	INFO    :2019-07-03-16_18_45	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:18:46,234	line32      	INFO    :2019-07-03-16_18_45	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:18:46,234	line32      	INFO    :SESSION:a1218393-ca43-41a2-a1ea-de06324472ab
+2019-07-03 16:18:46,236	line32      	INFO    :获取到token值：{'SESSION': 'a1218393-ca43-41a2-a1ea-de06324472ab'}
+2019-07-03 16:18:46,237	line32      	INFO    :用例运行结束  
+2019-07-03 16:19:14,219	line32      	INFO    :2019-07-03-16_19_14	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:19:14,401	line32      	INFO    :2019-07-03-16_19_14	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:19:14,401	line32      	INFO    :SESSION:01457357-62fb-4a56-b56e-532f29891f51
+2019-07-03 16:19:14,405	line32      	INFO    :获取到token值：{'SESSION': '01457357-62fb-4a56-b56e-532f29891f51'}
+2019-07-03 16:19:14,661	line32      	INFO    :2019-07-03-16_19_14	[['商品名称', '格兰仕(Galanz) G80F23CN1L -SD( SO ) 家用 大火力 微波炉 快速解冻 QQ蒸汽 银灰色'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G80F23CN1L-SD-SO'], ['操控方式', '电脑版'], ['底盘类型', '其他'], ['内胆材质', '纳米银内胆'], ['实际容量', '23L']]
+2019-07-03 16:19:14,663	line38      	WARNING :2019-07-03-16_19_14	方法名：saveProductParamet	异常原因：name 'case' is not defined
+2019-07-03 16:19:14,664	line32      	INFO    :用例运行结束  
+2019-07-03 16:19:54,943	line32      	INFO    :2019-07-03-16_19_54	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:19:55,246	line32      	INFO    :2019-07-03-16_19_54	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:19:55,247	line32      	INFO    :SESSION:38aae720-2588-4ee0-bacf-8211a0ba0df8
+2019-07-03 16:19:55,250	line32      	INFO    :获取到token值：{'SESSION': '38aae720-2588-4ee0-bacf-8211a0ba0df8'}
+2019-07-03 16:19:55,503	line32      	INFO    :2019-07-03-16_19_54	[['商品名称', '格兰仕(Galanz) G80F23CN1L -SD( SO ) 家用 大火力 微波炉 快速解冻 QQ蒸汽 银灰色'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G80F23CN1L-SD-SO'], ['操控方式', '电脑版'], ['底盘类型', '其他'], ['内胆材质', '纳米银内胆'], ['实际容量', '23L']]
+2019-07-03 16:19:55,505	line32      	INFO    :用例运行结束  
+2019-07-03 16:20:03,256	line32      	INFO    :2019-07-03-16_20_03	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:20:03,476	line32      	INFO    :2019-07-03-16_20_03	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:20:03,476	line32      	INFO    :SESSION:33bc042e-308a-481b-976e-21497ddcfcd0
+2019-07-03 16:20:03,480	line32      	INFO    :获取到token值：{'SESSION': '33bc042e-308a-481b-976e-21497ddcfcd0'}
+2019-07-03 16:20:03,737	line32      	INFO    :2019-07-03-16_20_03	[['商品名称', '格兰仕(Galanz) G80F23CN1L -SD( SO ) 家用 大火力 微波炉 快速解冻 QQ蒸汽 银灰色'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G80F23CN1L-SD-SO'], ['操控方式', '电脑版'], ['底盘类型', '其他'], ['内胆材质', '纳米银内胆'], ['实际容量', '23L']]
+2019-07-03 16:20:03,739	line32      	INFO    :用例运行结束  
+2019-07-03 16:22:23,256	line32      	INFO    :2019-07-03-16_22_23	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:22:23,473	line32      	INFO    :2019-07-03-16_22_23	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:22:23,473	line32      	INFO    :SESSION:678b7d61-bb83-4431-b50a-551158eeb2d3
+2019-07-03 16:22:23,477	line32      	INFO    :获取到token值：{'SESSION': '678b7d61-bb83-4431-b50a-551158eeb2d3'}
+2019-07-03 16:22:23,726	line32      	INFO    :2019-07-03-16_22_23	{'product_id': '100385824', 'product_name': '【底价狂欢】格兰仕（Galanz）P70D20N3P- ST（W0）微波炉 20L容量 旋钮操作 简单省时 国家标准尺寸', 'product_price': '602'}
+2019-07-03 16:22:25,017	line38      	WARNING :2019-07-03-16_22_23	方法名：saveProduct	异常原因：string indices must be integers
+2019-07-03 16:22:25,019	line32      	INFO    :用例运行结束  
+2019-07-03 16:23:57,006	line32      	INFO    :2019-07-03-16_23_57	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:23:57,188	line32      	INFO    :2019-07-03-16_23_57	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:23:57,190	line32      	INFO    :SESSION:e98208ce-7144-48b0-9a07-34c3437ae3de
+2019-07-03 16:23:57,191	line32      	INFO    :获取到token值：{'SESSION': 'e98208ce-7144-48b0-9a07-34c3437ae3de'}
+2019-07-03 16:23:57,424	line32      	INFO    :2019-07-03-16_23_57	{'product_id': '100385824', 'product_name': '【底价狂欢】格兰仕（Galanz）P70D20N3P- ST（W0）微波炉 20L容量 旋钮操作 简单省时 国家标准尺寸', 'product_price': '602'}
+2019-07-03 16:23:58,726	line38      	WARNING :2019-07-03-16_23_57	方法名：saveProduct	异常原因：string indices must be integers
+2019-07-03 16:23:58,729	line32      	INFO    :用例运行结束  
+2019-07-03 16:24:20,806	line32      	INFO    :2019-07-03-16_24_20	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:24:21,085	line32      	INFO    :2019-07-03-16_24_20	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:24:21,085	line32      	INFO    :SESSION:125826d8-213d-4c05-8d1d-d3c7e637fa10
+2019-07-03 16:24:21,089	line32      	INFO    :获取到token值：{'SESSION': '125826d8-213d-4c05-8d1d-d3c7e637fa10'}
+2019-07-03 16:24:21,321	line32      	INFO    :2019-07-03-16_24_20	{'product_id': '100385824', 'product_price': '602', 'product_name': '【底价狂欢】格兰仕（Galanz）P70D20N3P- ST（W0）微波炉 20L容量 旋钮操作 简单省时 国家标准尺寸'}
+2019-07-03 16:24:22,536	line38      	WARNING :2019-07-03-16_24_20	方法名：saveProduct	异常原因：string indices must be integers
+2019-07-03 16:24:22,539	line32      	INFO    :用例运行结束  
+2019-07-03 16:24:33,358	line32      	INFO    :2019-07-03-16_24_33	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:24:33,617	line32      	INFO    :2019-07-03-16_24_33	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:24:33,617	line32      	INFO    :SESSION:d6bfbe8d-28f9-48e0-ba0b-101c3a8dab2d
+2019-07-03 16:24:33,618	line32      	INFO    :获取到token值：{'SESSION': 'd6bfbe8d-28f9-48e0-ba0b-101c3a8dab2d'}
+2019-07-03 16:24:33,862	line32      	INFO    :2019-07-03-16_24_33	{'product_id': '100385824', 'product_price': '602', 'product_name': '【底价狂欢】格兰仕（Galanz）P70D20N3P- ST（W0）微波炉 20L容量 旋钮操作 简单省时 国家标准尺寸'}
+2019-07-03 16:24:35,095	line32      	INFO    :用例运行结束  
+2019-07-03 16:25:24,730	line32      	INFO    :2019-07-03-16_25_24	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:25:25,005	line32      	INFO    :2019-07-03-16_25_24	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:25:25,005	line32      	INFO    :SESSION:973e5041-1576-4274-8447-4ad8aa5ff241
+2019-07-03 16:25:25,009	line32      	INFO    :获取到token值：{'SESSION': '973e5041-1576-4274-8447-4ad8aa5ff241'}
+2019-07-03 16:25:25,250	line32      	INFO    :2019-07-03-16_25_24	{'product_name': '【底价狂欢】格兰仕（Galanz）P70D20N3P- ST（W0）微波炉 20L容量 旋钮操作 简单省时 国家标准尺寸', 'product_price': '602', 'product_id': '100385824'}
+2019-07-03 16:25:26,459	line38      	WARNING :2019-07-03-16_25_24	方法名：saveProduct	异常原因：string indices must be integers
+2019-07-03 16:25:26,460	line32      	INFO    :用例运行结束  
+2019-07-03 16:26:19,125	line32      	INFO    :2019-07-03-16_26_19	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:26:19,348	line32      	INFO    :2019-07-03-16_26_19	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:26:19,348	line32      	INFO    :SESSION:104d1cc8-eac8-46a9-b505-b3038e0e2102
+2019-07-03 16:26:19,354	line32      	INFO    :获取到token值：{'SESSION': '104d1cc8-eac8-46a9-b505-b3038e0e2102'}
+2019-07-03 16:26:19,596	line32      	INFO    :2019-07-03-16_26_19	{'product_id': '100385824', 'product_price': '602', 'product_name': '【底价狂欢】格兰仕（Galanz）P70D20N3P- ST（W0）微波炉 20L容量 旋钮操作 简单省时 国家标准尺寸'}
+2019-07-03 16:26:20,828	line32      	INFO    :用例运行结束  
+2019-07-03 16:28:25,773	line32      	INFO    :2019-07-03-16_28_25	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:28:25,971	line32      	INFO    :2019-07-03-16_28_25	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:28:25,973	line32      	INFO    :SESSION:6cacfb6f-e1a6-445f-bdc5-094aca0e16cf
+2019-07-03 16:28:25,976	line32      	INFO    :获取到token值：{'SESSION': '6cacfb6f-e1a6-445f-bdc5-094aca0e16cf'}
+2019-07-03 16:28:26,233	line32      	INFO    :2019-07-03-16_28_25	{'product_price': '602', 'product_id': '100385824', 'product_name': '【底价狂欢】格兰仕（Galanz）P70D20N3P- ST（W0）微波炉 20L容量 旋钮操作 简单省时 国家标准尺寸'}
+2019-07-03 16:28:27,437	line32      	INFO    :用例运行结束  
+2019-07-03 16:30:57,609	line32      	INFO    :2019-07-03-16_30_57	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:30:57,825	line32      	INFO    :2019-07-03-16_30_57	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:30:57,825	line32      	INFO    :SESSION:e3f04c76-33bf-4789-baef-8fd7989f1e2b
+2019-07-03 16:30:57,826	line32      	INFO    :获取到token值：{'SESSION': 'e3f04c76-33bf-4789-baef-8fd7989f1e2b'}
+2019-07-03 16:30:58,082	line32      	INFO    :2019-07-03-16_30_57	{'product_id': '100385824', 'product_price': '602', 'product_name': '【底价狂欢】格兰仕（Galanz）P70D20N3P- ST（W0）微波炉 20L容量 旋钮操作 简单省时 国家标准尺寸'}
+2019-07-03 16:30:59,267	line32      	INFO    :2019-07-03-16_30_57	{"message":"运行正确","responseCode":"100000","result":56}
+2019-07-03 16:30:59,269	line32      	INFO    :用例运行结束  
+2019-07-03 16:44:15,082	line32      	INFO    :2019-07-03-16_44_15	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:44:15,450	line32      	INFO    :2019-07-03-16_44_15	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:44:15,451	line32      	INFO    :SESSION:e6321a91-aa03-4f31-91e0-c89e430fefdc
+2019-07-03 16:44:15,453	line32      	INFO    :获取到token值：{'SESSION': 'e6321a91-aa03-4f31-91e0-c89e430fefdc'}
+2019-07-03 16:44:15,710	line32      	INFO    :返回时间:2019-07-03-16_44_15	返回参数:{'product_id': '100399870', 'product_name': '美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应', 'product_price': '1680'}
+2019-07-03 16:44:16,838	line32      	INFO    :请求时间:2019-07-03-16_44_15	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProduct	请求参数:{'introduction': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703164414763775.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703164415716392.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703164415953279.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703164415394984.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703164415614506.jpg'], 'tagName': '测试标签', 'name': '美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应', 'buyLimit': '0', 'productBaseImage': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703164415716392.jpg'], 'isBuyLimit': '2', 'productStatus': '1', 'supplierId': '103', 'caption': '', 'productRate': '13', 'tag': '2', 'productImages': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703164415716392.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703164415953279.jpg'], 'logisticsType': 'TRANSPORT_DIRECT', 'categoryArr': ['102', '109'], 'supplierName': '', 'storeProductCategoryId': '132', 'businessType': '2', 'weight': '1', 'rebateRate': '0', 'isMarketable': '1', 'distributionChannel': ['1', '2', '3'], 'type': '1'}
+2019-07-03 16:44:17,013	line32      	INFO    :返回时间:2019-07-03-16_44_15	返回参数:{"message":"运行正确","responseCode":"100000","result":57}
+2019-07-03 16:44:17,269	line32      	INFO    :返回时间:2019-07-03-16_44_15	返回参数:[['商品名称', '美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应'], ['品牌', '美的(Midea)'], ['型号', 'X3-233A'], ['颜色', '金色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['实际容量', '23L']]
+2019-07-03 16:44:17,269	line32      	INFO    :请求时间:2019-07-03-16_44_15	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'productId': '57', 'value': '美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应', 'key': '商品名称'}
+2019-07-03 16:44:17,365	line32      	INFO    :返回时间:2019-07-03-16_44_15	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 16:44:16","key":"商品名称","merchantCode":"0185","productId":57,"updateTime":"2019-07-03 16:44:16","value":"美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应"}}
+2019-07-03 16:44:17,605	line32      	INFO    :返回时间:2019-07-03-16_44_15	返回参数:{'product_id': '100399870', 'product_name': '美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应', 'product_price': '1680'}
+2019-07-03 16:44:17,605	line32      	INFO    :请求时间:2019-07-03-16_44_15	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/querySpecificationList	请求参数:{'productId': '57'}
+2019-07-03 16:44:17,701	line32      	INFO    :返回时间:2019-07-03-16_44_15	返回参数:{"message":"运行正确","responseCode":"100000"}
+2019-07-03 16:44:17,703	line38      	WARNING :2019-07-03-16_44_15	方法名：saveProductSku	异常原因：'NoneType' object is not subscriptable
+2019-07-03 16:44:17,703	line32      	INFO    :用例运行结束  
+2019-07-03 16:47:43,858	line32      	INFO    :2019-07-03-16_47_43	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:47:44,230	line32      	INFO    :2019-07-03-16_47_43	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:47:44,230	line32      	INFO    :SESSION:032c08e0-06ab-431a-8ad8-48759794b325
+2019-07-03 16:47:44,234	line32      	INFO    :获取到token值：{'SESSION': '032c08e0-06ab-431a-8ad8-48759794b325'}
+2019-07-03 16:47:44,234	line32      	INFO    :请求时间:2019-07-03-16_47_43	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/querySpecificationList	请求参数:{'productId': '57'}
+2019-07-03 16:47:44,342	line32      	INFO    :返回时间:2019-07-03-16_47_43	返回参数:{"message":"运行正确","responseCode":"100000"}
+2019-07-03 16:47:44,344	line32      	INFO    :用例运行结束  
+2019-07-03 16:49:31,697	line32      	INFO    :2019-07-03-16_49_31	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:49:31,963	line32      	INFO    :2019-07-03-16_49_31	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:49:31,963	line32      	INFO    :SESSION:7865036e-bc43-44d0-93ce-9c7d3cdc59f9
+2019-07-03 16:49:31,967	line32      	INFO    :获取到token值：{'SESSION': '7865036e-bc43-44d0-93ce-9c7d3cdc59f9'}
+2019-07-03 16:49:32,200	line32      	INFO    :返回时间:2019-07-03-16_49_31	返回参数:{'product_id': '100399870', 'product_price': '1680', 'product_name': '美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应'}
+2019-07-03 16:49:32,200	line32      	INFO    :请求时间:2019-07-03-16_49_31	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/querySpecificationList	请求参数:{'productId': '57'}
+2019-07-03 16:49:32,280	line32      	INFO    :返回时间:2019-07-03-16_49_31	返回参数:<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html>
+<head><title>502 Bad Gateway</title></head>
+<body bgcolor="white">
+<h1>502 Bad Gateway</h1>
+<p>The proxy server received an invalid response from an upstream server. Sorry for the inconvenience.<br/>
+Please report this message and include the following information to us.<br/>
+Thank you very much!</p>
+<table>
+<tr>
+<td>URL:</td>
+<td>http://operation-pc-qa.eslink.net.cn/etbc/product/querySpecificationList</td>
+</tr>
+<tr>
+<td>Server:</td>
+<td>8f88be43538d</td>
+</tr>
+<tr>
+<td>Date:</td>
+<td>2019/07/03 08:49:31</td>
+</tr>
+</table>
+<hr/>Powered by Tengine/2.2.0</body>
+</html>
+
+2019-07-03 16:49:32,282	line38      	WARNING :2019-07-03-16_49_31	方法名：saveProductSku	异常原因：Expecting value: line 1 column 1 (char 0)
+2019-07-03 16:49:32,286	line32      	INFO    :用例运行结束  
+2019-07-03 16:50:57,529	line32      	INFO    :2019-07-03-16_50_57	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:50:57,885	line32      	INFO    :2019-07-03-16_50_57	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:50:57,885	line32      	INFO    :SESSION:72168a2a-ae52-45df-8874-47ef2617fdfa
+2019-07-03 16:50:57,890	line32      	INFO    :获取到token值：{'SESSION': '72168a2a-ae52-45df-8874-47ef2617fdfa'}
+2019-07-03 16:50:58,131	line32      	INFO    :返回时间:2019-07-03-16_50_57	返回参数:[['颜色', '金色']]
+2019-07-03 16:50:58,132	line38      	WARNING :2019-07-03-16_50_57	方法名：saveProductSpecification	异常原因：name 'productId' is not defined
+2019-07-03 16:50:58,134	line32      	INFO    :用例运行结束  
+2019-07-03 16:51:18,052	line32      	INFO    :2019-07-03-16_51_18	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:51:18,415	line32      	INFO    :2019-07-03-16_51_18	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:51:18,415	line32      	INFO    :SESSION:624242dd-aae8-4d91-b351-c55ae897d6be
+2019-07-03 16:51:18,420	line32      	INFO    :获取到token值：{'SESSION': '624242dd-aae8-4d91-b351-c55ae897d6be'}
+2019-07-03 16:51:18,678	line32      	INFO    :返回时间:2019-07-03-16_51_18	返回参数:[['颜色', '金色']]
+2019-07-03 16:51:18,680	line32      	INFO    :请求时间:2019-07-03-16_51_18	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductSpecification	请求参数:{'value': '金色', 'key': '颜色', 'productId': '57'}
+2019-07-03 16:51:20,334	line32      	INFO    :返回时间:2019-07-03-16_51_18	返回参数:{"message":"运行正确","responseCode":"100000","result":{"key":"颜色","merchantCode":"0185","productId":57,"value":"金色"}}
+2019-07-03 16:51:20,572	line32      	INFO    :返回时间:2019-07-03-16_51_18	返回参数:{'product_price': '1680', 'product_id': '100399870', 'product_name': '美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应'}
+2019-07-03 16:51:20,572	line32      	INFO    :请求时间:2019-07-03-16_51_18	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/querySpecificationList	请求参数:{'productId': '57'}
+2019-07-03 16:51:20,723	line32      	INFO    :返回时间:2019-07-03-16_51_18	返回参数:{"message":"运行正确","responseCode":"100000","result":[{"specificationValue":[{"id":175,"key":"颜色","merchantCode":"0185","productId":57,"value":"金色"}],"key":"颜色"}]}
+2019-07-03 16:51:21,661	line38      	WARNING :2019-07-03-16_51_18	方法名：saveProductSku	异常原因：name 'productId' is not defined
+2019-07-03 16:51:21,661	line32      	INFO    :用例运行结束  
+2019-07-03 16:53:59,055	line32      	INFO    :2019-07-03-16_53_59	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 16:53:59,296	line32      	INFO    :2019-07-03-16_53_59	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:53:59,296	line32      	INFO    :SESSION:647dacaf-33d2-49c7-b780-6aabee9be14c
+2019-07-03 16:53:59,301	line32      	INFO    :获取到token值：{'SESSION': '647dacaf-33d2-49c7-b780-6aabee9be14c'}
+2019-07-03 16:53:59,552	line32      	INFO    :返回时间:2019-07-03-16_53_59	返回参数:{'product_price': '1680', 'product_id': '100399870', 'product_name': '美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应'}
+2019-07-03 16:53:59,553	line38      	WARNING :2019-07-03-16_53_59	方法名：querySpecificationList	异常原因：name 'productId' is not defined
+2019-07-03 16:53:59,553	line38      	WARNING :2019-07-03-16_53_59	方法名：saveProductSku	异常原因：name 'productId' is not defined
+2019-07-03 16:53:59,555	line32      	INFO    :用例运行结束  
+2019-07-03 16:54:11,105	line32      	INFO    :2019-07-03-16_54_11	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:54:11,424	line32      	INFO    :2019-07-03-16_54_11	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:54:11,424	line32      	INFO    :SESSION:c71c9e19-4037-4e09-bb39-b1ec3105302f
+2019-07-03 16:54:11,426	line32      	INFO    :获取到token值：{'SESSION': 'c71c9e19-4037-4e09-bb39-b1ec3105302f'}
+2019-07-03 16:54:11,673	line32      	INFO    :返回时间:2019-07-03-16_54_11	返回参数:{'product_name': '美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应', 'product_price': '1680', 'product_id': '100399870'}
+2019-07-03 16:54:11,674	line32      	INFO    :请求时间:2019-07-03-16_54_11	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/querySpecificationList	请求参数:{'productId': '57'}
+2019-07-03 16:54:11,765	line32      	INFO    :返回时间:2019-07-03-16_54_11	返回参数:{"message":"运行正确","responseCode":"100000","result":[{"specificationValue":[{"id":175,"key":"颜色","merchantCode":"0185","productId":57,"value":"金色"}],"key":"颜色"}]}
+2019-07-03 16:54:12,040	line32      	INFO    :请求时间:2019-07-03-16_54_11	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductSku	请求参数:{'inventory': '0', 'sellPrice': '1680', 'skuStatus': '1', 'specificationValue': '金色', 'productImage': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165410616090.jpg'], 'cost': '1680', 'productId': '57', 'marketPrice': '1680', 'specificationGroup': '175', 'giftPoint': '1680'}
+2019-07-03 16:54:12,336	line32      	INFO    :返回时间:2019-07-03-16_54_11	返回参数:{"message":"运行正确","responseCode":"100000","result":{"cost":1680,"createTime":"2019-07-03 16:54:11","giftPoint":1680,"inventory":0,"marketPrice":1680,"merchantCode":"0185","productId":57,"productImage":"http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165410616090.jpg","productName":"美的(Midea) X3-233A 变频微波炉 23L 光波烧烤一体机 智能湿度感应","sellPrice":1680,"skuCode":"201907031654100185","skuStatus":1,"skuStatusStr":"有效","specificationGroup":"175","specificationValue":"金色","unAllocatedInventory":0}}
+2019-07-03 16:54:12,338	line32      	INFO    :请求时间:2019-07-03-16_54_11	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/updateProductTemplateId	请求参数:{'deliveryTemplateId': '2', 'weight': '1', 'productId': '57'}
+2019-07-03 16:54:12,453	line32      	INFO    :返回时间:2019-07-03-16_54_11	返回参数:{"message":"运行正确","responseCode":"100000"}
+2019-07-03 16:54:12,453	line32      	INFO    :用例运行结束  
+2019-07-03 16:56:39,690	line32      	INFO    :2019-07-03-16_56_39	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:56:40,045	line32      	INFO    :2019-07-03-16_56_39	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:56:40,045	line32      	INFO    :SESSION:31c8dde8-7dd5-4a5c-a630-10d5e8a6aa7c
+2019-07-03 16:56:40,049	line32      	INFO    :获取到token值：{'SESSION': '31c8dde8-7dd5-4a5c-a630-10d5e8a6aa7c'}
+2019-07-03 16:56:40,293	line32      	INFO    :返回时间:2019-07-03-16_56_39	返回参数:{'product_name': '格兰仕(Galanz) 微波炉 P70F23P-G5(S0) 23L大容量 6档火力组合  银', 'product_price': '468', 'product_id': '100281254'}
+2019-07-03 16:56:41,901	line32      	INFO    :请求时间:2019-07-03-16_56_39	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProduct	请求参数:{'type': '1', 'tagName': '测试标签', 'storeProductCategoryId': '132', 'isMarketable': '1', 'productBaseImage': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165639274053.jpg'], 'tag': '2', 'introduction': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165639359952.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165639274053.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165639981233.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165640102076.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165640153572.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165640935507.jpg'], 'productRate': '13', 'productStatus': '1', 'buyLimit': '0', 'caption': '', 'supplierName': '', 'productImages': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165639274053.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165639981233.jpg'], 'rebateRate': '0', 'distributionChannel': ['1', '2', '3'], 'weight': '1', 'supplierId': '103', 'logisticsType': 'TRANSPORT_DIRECT', 'businessType': '2', 'name': '格兰仕(Galanz) 微波炉 P70F23P-G5(S0) 23L大容量 6档火力组合  银', 'categoryArr': ['102', '109'], 'isBuyLimit': '2'}
+2019-07-03 16:56:42,086	line32      	INFO    :返回时间:2019-07-03-16_56_39	返回参数:{"message":"运行正确","responseCode":"100000","result":58}
+2019-07-03 16:56:42,342	line32      	INFO    :返回时间:2019-07-03-16_56_39	返回参数:[['商品名称', '格兰仕(Galanz) 微波炉 P70F23P-G5(S0) 23L大容量 6档火力组合  银'], ['品牌', '格兰仕(Galanz)'], ['型号', 'P70F23P-G5(SO)'], ['颜色', '银'], ['操控方式', '机械版'], ['底盘类型', '平板式'], ['实际容量', '23']]
+2019-07-03 16:56:42,342	line32      	INFO    :请求时间:2019-07-03-16_56_39	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'value': '格兰仕(Galanz) 微波炉 P70F23P-G5(S0) 23L大容量 6档火力组合  银', 'productId': '58', 'key': '商品名称'}
+2019-07-03 16:56:42,459	line32      	INFO    :返回时间:2019-07-03-16_56_39	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 16:56:41","key":"商品名称","merchantCode":"0185","productId":58,"updateTime":"2019-07-03 16:56:41","value":"格兰仕(Galanz) 微波炉 P70F23P-G5(S0) 23L大容量 6档火力组合  银"}}
+2019-07-03 16:56:42,713	line32      	INFO    :返回时间:2019-07-03-16_56_39	返回参数:[['颜色', '银']]
+2019-07-03 16:56:42,713	line32      	INFO    :请求时间:2019-07-03-16_56_39	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductSpecification	请求参数:{'value': '银', 'productId': '57', 'key': '颜色'}
+2019-07-03 16:56:42,834	line32      	INFO    :返回时间:2019-07-03-16_56_39	返回参数:{"message":"运行正确","responseCode":"100000","result":{"key":"颜色","merchantCode":"0185","productId":57,"value":"银"}}
+2019-07-03 16:56:43,075	line32      	INFO    :返回时间:2019-07-03-16_56_39	返回参数:{'product_name': '格兰仕(Galanz) 微波炉 P70F23P-G5(S0) 23L大容量 6档火力组合  银', 'product_price': '468', 'product_id': '100281254'}
+2019-07-03 16:56:43,075	line32      	INFO    :请求时间:2019-07-03-16_56_39	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/querySpecificationList	请求参数:{'productId': '58'}
+2019-07-03 16:56:43,163	line32      	INFO    :返回时间:2019-07-03-16_56_39	返回参数:{"message":"运行正确","responseCode":"100000"}
+2019-07-03 16:56:43,164	line38      	WARNING :2019-07-03-16_56_39	方法名：saveProductSku	异常原因：'NoneType' object is not subscriptable
+2019-07-03 16:56:43,164	line32      	INFO    :用例运行结束  
+2019-07-03 16:58:14,665	line32      	INFO    :2019-07-03-16_58_14	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 16:58:15,109	line32      	INFO    :2019-07-03-16_58_14	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 16:58:15,109	line32      	INFO    :SESSION:dfd867b5-7a21-47c0-9455-4b4fd1b36550
+2019-07-03 16:58:15,111	line32      	INFO    :获取到token值：{'SESSION': 'dfd867b5-7a21-47c0-9455-4b4fd1b36550'}
+2019-07-03 16:58:15,365	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:{'product_id': '100471332', 'product_price': '773', 'product_name': '格兰仕(Galanz) HC- 83203FB 23L APP智控 智能预约 微波炉 光波炉 黑'}
+2019-07-03 16:58:17,255	line32      	INFO    :请求时间:2019-07-03-16_58_14	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProduct	请求参数:{'productRate': '13', 'weight': '1', 'buyLimit': '0', 'distributionChannel': ['1', '2', '3'], 'supplierName': '', 'rebateRate': '0', 'logisticsType': 'TRANSPORT_DIRECT', 'name': '格兰仕(Galanz) HC- 83203FB 23L APP智控 智能预约 微波炉 光波炉 黑', 'productBaseImage': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165814998320.jpg'], 'isBuyLimit': '2', 'isMarketable': '1', 'tag': '2', 'businessType': '2', 'type': '1', 'storeProductCategoryId': '132', 'productStatus': '1', 'categoryArr': ['102', '109'], 'caption': '', 'introduction': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165814248267.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165814998320.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165815351961.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165815290593.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165815001226.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165815787333.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165816024657.jpg'], 'productImages': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165814998320.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165815351961.jpg'], 'tagName': '测试标签', 'supplierId': '103'}
+2019-07-03 16:58:17,368	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:{"message":"运行正确","responseCode":"100000","result":59}
+2019-07-03 16:58:17,598	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:[['商品名称', '格兰仕(Galanz) HC- 83203FB 23L APP智控 智能预约 微波炉 光波炉 黑'], ['型号', 'HC-83203FB'], ['实际容量', '23L'], ['颜色', '黑色'], ['品牌', '格兰仕(Galanz)']]
+2019-07-03 16:58:17,599	line32      	INFO    :请求时间:2019-07-03-16_58_14	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'productId': '59', 'key': '商品名称', 'value': '格兰仕(Galanz) HC- 83203FB 23L APP智控 智能预约 微波炉 光波炉 黑'}
+2019-07-03 16:58:17,700	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 16:58:16","key":"商品名称","merchantCode":"0185","productId":59,"updateTime":"2019-07-03 16:58:16","value":"格兰仕(Galanz) HC- 83203FB 23L APP智控 智能预约 微波炉 光波炉 黑"}}
+2019-07-03 16:58:17,950	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:[['颜色', '黑色']]
+2019-07-03 16:58:17,951	line32      	INFO    :请求时间:2019-07-03-16_58_14	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductSpecification	请求参数:{'productId': '59', 'key': '颜色', 'value': '黑色'}
+2019-07-03 16:58:18,045	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:{"message":"运行正确","responseCode":"100000","result":{"key":"颜色","merchantCode":"0185","productId":59,"value":"黑色"}}
+2019-07-03 16:58:18,293	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:{'product_id': '100471332', 'product_price': '773', 'product_name': '格兰仕(Galanz) HC- 83203FB 23L APP智控 智能预约 微波炉 光波炉 黑'}
+2019-07-03 16:58:18,295	line32      	INFO    :请求时间:2019-07-03-16_58_14	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/querySpecificationList	请求参数:{'productId': '59'}
+2019-07-03 16:58:18,391	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:{"message":"运行正确","responseCode":"100000","result":[{"specificationValue":[{"id":177,"key":"颜色","merchantCode":"0185","productId":59,"value":"黑色"}],"key":"颜色"}]}
+2019-07-03 16:58:18,637	line32      	INFO    :请求时间:2019-07-03-16_58_14	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductSku	请求参数:{'productId': '59', 'giftPoint': '773', 'skuStatus': '1', 'inventory': '0', 'productImage': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165817090504.jpg'], 'specificationGroup': '177', 'cost': '773', 'specificationValue': '黑色', 'sellPrice': '773', 'marketPrice': '773'}
+2019-07-03 16:58:18,750	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:{"message":"运行正确","responseCode":"100000","result":{"cost":773,"createTime":"2019-07-03 16:58:17","giftPoint":773,"inventory":0,"marketPrice":773,"merchantCode":"0185","productId":59,"productImage":"http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703165817090504.jpg","productName":"格兰仕(Galanz) HC- 83203FB 23L APP智控 智能预约 微波炉 光波炉 黑","sellPrice":773,"skuCode":"201907031658170185","skuStatus":1,"skuStatusStr":"有效","specificationGroup":"177","specificationValue":"黑色","unAllocatedInventory":0}}
+2019-07-03 16:58:18,750	line32      	INFO    :请求时间:2019-07-03-16_58_14	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/updateProductTemplateId	请求参数:{'productId': '59', 'weight': '1', 'deliveryTemplateId': '2'}
+2019-07-03 16:58:18,861	line32      	INFO    :返回时间:2019-07-03-16_58_14	返回参数:{"message":"运行正确","responseCode":"100000"}
+2019-07-03 16:58:18,862	line32      	INFO    :用例运行结束  
+2019-07-03 17:08:39,451	line32      	INFO    :2019-07-03-17_08_39	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 17:08:39,806	line32      	INFO    :2019-07-03-17_08_39	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 17:08:39,806	line32      	INFO    :SESSION:c167d640-3696-4efb-a1d0-4530622a76b3
+2019-07-03 17:08:39,809	line32      	INFO    :获取到token值：{'SESSION': 'c167d640-3696-4efb-a1d0-4530622a76b3'}
+2019-07-03 17:08:39,809	line32      	INFO    :请求时间:2019-07-03-17_08_39	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/batchUpdateProduct	请求参数:{'isMarketable': '2', 'productIds': '59', 'type': '3'}
+2019-07-03 17:08:40,025	line32      	INFO    :返回时间:2019-07-03-17_08_39	返回参数:{"message":"运行正确","responseCode":"100000"}
+2019-07-03 17:08:40,026	line32      	INFO    :用例运行结束  
+2019-07-03 17:09:46,203	line32      	INFO    :2019-07-03-17_09_46	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 17:09:46,493	line32      	INFO    :2019-07-03-17_09_46	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 17:09:46,493	line32      	INFO    :SESSION:25063932-0787-48da-9933-a3da13ecfaa2
+2019-07-03 17:09:46,496	line32      	INFO    :获取到token值：{'SESSION': '25063932-0787-48da-9933-a3da13ecfaa2'}
+2019-07-03 17:09:46,497	line32      	INFO    :请求时间:2019-07-03-17_09_46	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/batchUpdateProduct	请求参数:{'type': '3', 'productIds': '59', 'isMarketable': '1'}
+2019-07-03 17:09:46,766	line32      	INFO    :返回时间:2019-07-03-17_09_46	返回参数:{"message":"运行正确","responseCode":"100000"}	1成功
+2019-07-03 17:09:46,766	line32      	INFO    :用例运行结束  
+2019-07-03 17:11:23,602	line32      	INFO    :2019-07-03-17_11_23	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 17:11:23,880	line32      	INFO    :2019-07-03-17_11_23	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 17:11:23,880	line32      	INFO    :SESSION:61e5a980-d536-4950-b71f-26dde5407ab7
+2019-07-03 17:11:23,884	line32      	INFO    :获取到token值：{'SESSION': '61e5a980-d536-4950-b71f-26dde5407ab7'}
+2019-07-03 17:11:24,121	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:{'product_name': '格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤', 'product_id': '100286375', 'product_price': '1820'}
+2019-07-03 17:11:25,805	line32      	INFO    :请求时间:2019-07-03-17_11_23	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProduct	请求参数:{'storeProductCategoryId': '132', 'distributionChannel': ['1', '2', '3'], 'supplierName': '', 'productStatus': '1', 'isMarketable': '1', 'isBuyLimit': '2', 'categoryArr': ['102', '109'], 'tagName': '测试标签', 'name': '格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤', 'businessType': '2', 'productImages': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171123923316.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171123882429.jpg'], 'caption': '', 'introduction': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171123919276.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171123923316.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171123882429.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171123976649.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171124325576.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171124120842.jpg', 'http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171124736494.jpg'], 'supplierId': '103', 'weight': '1', 'productBaseImage': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171123923316.jpg'], 'buyLimit': '0', 'type': '1', 'rebateRate': '0', 'productRate': '13', 'logisticsType': 'TRANSPORT_DIRECT', 'tag': '2'}
+2019-07-03 17:11:25,967	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:{"message":"运行正确","responseCode":"100000","result":60}
+2019-07-03 17:11:26,207	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:[['商品名称', '格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G70F20CN1L-DG(B0)'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['内胆材质', '纳米银内胆'], ['实际容量', '20L']]
+2019-07-03 17:11:26,207	line32      	INFO    :请求时间:2019-07-03-17_11_23	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'value': '格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤', 'productId': '60', 'key': '商品名称'}
+2019-07-03 17:11:26,368	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 17:11:25","key":"商品名称","merchantCode":"0185","productId":60,"updateTime":"2019-07-03 17:11:25","value":"格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤"}}
+2019-07-03 17:11:26,609	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:[['颜色', '黑色']]
+2019-07-03 17:11:26,611	line32      	INFO    :请求时间:2019-07-03-17_11_23	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductSpecification	请求参数:{'value': '黑色', 'productId': '60', 'key': '颜色'}
+2019-07-03 17:11:26,706	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:{"message":"运行正确","responseCode":"100000","result":{"key":"颜色","merchantCode":"0185","productId":60,"value":"黑色"}}
+2019-07-03 17:11:26,938	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:{'product_name': '格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤', 'product_id': '100286375', 'product_price': '1820'}
+2019-07-03 17:11:26,940	line32      	INFO    :请求时间:2019-07-03-17_11_23	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/querySpecificationList	请求参数:{'productId': '60'}
+2019-07-03 17:11:27,039	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:{"message":"运行正确","responseCode":"100000","result":[{"specificationValue":[{"id":178,"key":"颜色","merchantCode":"0185","productId":60,"value":"黑色"}],"key":"颜色"}]}
+2019-07-03 17:11:27,256	line32      	INFO    :请求时间:2019-07-03-17_11_23	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductSku	请求参数:{'giftPoint': '1820', 'marketPrice': '1820', 'skuStatus': '1', 'cost': '1820', 'productImage': ['http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171126460841.jpg'], 'inventory': '0', 'productId': '60', 'specificationGroup': '178', 'specificationValue': '黑色', 'sellPrice': '1820'}
+2019-07-03 17:11:27,371	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:{"message":"运行正确","responseCode":"100000","result":{"cost":1820,"createTime":"2019-07-03 17:11:26","giftPoint":1820,"inventory":0,"marketPrice":1820,"merchantCode":"0185","productId":60,"productImage":"http://eslink-operation-test.oss-cn-beijing.aliyuncs.com/20190703171126460841.jpg","productName":"格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤","sellPrice":1820,"skuCode":"201907031711260185","skuStatus":1,"skuStatusStr":"有效","specificationGroup":"178","specificationValue":"黑色","unAllocatedInventory":0}}
+2019-07-03 17:11:27,371	line32      	INFO    :请求时间:2019-07-03-17_11_23	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/updateProductTemplateId	请求参数:{'productId': '60', 'weight': '1', 'deliveryTemplateId': '2'}
+2019-07-03 17:11:27,463	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:{"message":"运行正确","responseCode":"100000"}
+2019-07-03 17:11:27,463	line32      	INFO    :请求时间:2019-07-03-17_11_23	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/batchUpdateProduct	请求参数:{'productIds': '59', 'type': '3', 'isMarketable': '2'}
+2019-07-03 17:11:27,645	line32      	INFO    :返回时间:2019-07-03-17_11_23	返回参数:{"message":"运行正确","responseCode":"100000"}
+2019-07-03 17:11:27,647	line32      	INFO    :用例运行结束  
+2019-07-03 17:19:54,759	line32      	INFO    :2019-07-03-17_19_54	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 17:19:55,019	line32      	INFO    :2019-07-03-17_19_54	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 17:19:55,019	line32      	INFO    :SESSION:6f69e7e9-e1c6-4315-a870-84b9dbd26d82
+2019-07-03 17:19:55,023	line32      	INFO    :获取到token值：{'SESSION': '6f69e7e9-e1c6-4315-a870-84b9dbd26d82'}
+2019-07-03 17:19:55,260	line32      	INFO    :返回时间:2019-07-03-17_19_54	返回参数:[['商品名称', '格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G70F20CN1L-DG(B0)'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['内胆材质', '纳米银内胆'], ['实际容量', '20L']]
+2019-07-03 17:19:55,262	line32      	INFO    :用例运行结束  
+2019-07-03 17:21:12,019	line32      	INFO    :2019-07-03-17_21_12	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 17:21:12,259	line32      	INFO    :2019-07-03-17_21_12	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 17:21:12,259	line32      	INFO    :SESSION:7569bdff-0c9a-4c81-940b-0008df8da42d
+2019-07-03 17:21:12,263	line32      	INFO    :获取到token值：{'SESSION': '7569bdff-0c9a-4c81-940b-0008df8da42d'}
+2019-07-03 17:21:12,529	line32      	INFO    :返回时间:2019-07-03-17_21_12	返回参数:[]
+2019-07-03 17:21:12,529	line32      	INFO    :用例运行结束  
+2019-07-03 17:21:37,378	line32      	INFO    :2019-07-03-17_21_37	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 17:21:37,677	line32      	INFO    :2019-07-03-17_21_37	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 17:21:37,677	line32      	INFO    :SESSION:5dabba73-d9bb-463a-8f29-c2c422aa9e84
+2019-07-03 17:21:37,681	line32      	INFO    :获取到token值：{'SESSION': '5dabba73-d9bb-463a-8f29-c2c422aa9e84'}
+2019-07-03 17:21:37,961	line32      	INFO    :返回时间:2019-07-03-17_21_37	返回参数:[]
+2019-07-03 17:21:37,963	line32      	INFO    :用例运行结束  
+2019-07-03 17:22:41,194	line32      	INFO    :2019-07-03-17_22_41	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 17:22:41,463	line32      	INFO    :2019-07-03-17_22_41	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 17:22:41,463	line32      	INFO    :SESSION:ba7f1ce7-718c-4526-aca7-85a3b8169de3
+2019-07-03 17:22:41,470	line32      	INFO    :获取到token值：{'SESSION': 'ba7f1ce7-718c-4526-aca7-85a3b8169de3'}
+2019-07-03 17:23:33,388	line32      	INFO    :返回时间:2019-07-03-17_22_41	返回参数:[]
+2019-07-03 17:23:36,397	line32      	INFO    :用例运行结束  
+2019-07-03 17:24:39,632	line32      	INFO    :2019-07-03-17_24_39	入参{'loginPwd': 'xiaozhangyang', 'loginName': 'xiaozhangyang'}	
+2019-07-03 17:24:39,888	line32      	INFO    :2019-07-03-17_24_39	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 17:24:39,888	line32      	INFO    :SESSION:acc917a9-fcbd-44ee-ad4c-971694976236
+2019-07-03 17:24:39,890	line32      	INFO    :获取到token值：{'SESSION': 'acc917a9-fcbd-44ee-ad4c-971694976236'}
+2019-07-03 17:24:40,130	line32      	INFO    :返回时间:2019-07-03-17_24_39	返回参数:[['商品名称', '格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G70F20CN1L-DG(B0)'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['内胆材质', '纳米银内胆'], ['实际容量', '20L']]
+2019-07-03 17:24:40,131	line32      	INFO    :用例运行结束  
+2019-07-03 17:26:31,997	line32      	INFO    :2019-07-03-17_26_31	入参{'loginName': 'xiaozhangyang', 'loginPwd': 'xiaozhangyang'}	
+2019-07-03 17:26:32,240	line32      	INFO    :2019-07-03-17_26_31	方法名：new_Loging_etbc	请求地址：http://etbc-qa.eslink.net.cn/user/login	请求状态：200	返回内容：{"responseCode":"100000","message":"运行正确","result":{"orgName":"ESLink易联云开发测试","ownership":"0185","loginName":"xiaozhangyang","mobile":"17767213660","name":"小张阳","userId":"31937","partName":"ESLink易联云开发测试","etbcAppId":"ETBCYEMpCaWr5KrYpGSk"}}
+2019-07-03 17:26:32,242	line32      	INFO    :SESSION:dfc5a04a-1808-4d87-9330-925b6b0b6457
+2019-07-03 17:26:32,243	line32      	INFO    :获取到token值：{'SESSION': 'dfc5a04a-1808-4d87-9330-925b6b0b6457'}
+2019-07-03 17:26:32,497	line32      	INFO    :返回时间:2019-07-03-17_26_31	返回参数:[['商品名称', '格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤'], ['品牌', '格兰仕(Galanz)'], ['型号', 'G70F20CN1L-DG(B0)'], ['颜色', '黑色'], ['操控方式', '电脑版'], ['底盘类型', '平板式'], ['内胆材质', '纳米银内胆'], ['实际容量', '20L']]
+2019-07-03 17:26:32,499	line32      	INFO    :请求时间:2019-07-03-17_26_31	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'key': '商品名称', 'value': '格兰仕(Galanz) G70F20CN1L-DG(B0)微波炉 20L 光波快速启动 平板设计 智能 烧烤', 'productId': '57'}
+2019-07-03 17:26:32,615	line32      	INFO    :返回时间:2019-07-03-17_26_31	返回参数:{"message":"商品参数名称已经存在","responseCode":"900040"}
+2019-07-03 17:26:32,615	line32      	INFO    :请求时间:2019-07-03-17_26_31	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'key': '品牌', 'value': '格兰仕(Galanz)', 'productId': '57'}
+2019-07-03 17:26:32,684	line32      	INFO    :返回时间:2019-07-03-17_26_31	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 17:26:31","key":"品牌","merchantCode":"0185","productId":57,"updateTime":"2019-07-03 17:26:31","value":"格兰仕(Galanz)"}}
+2019-07-03 17:26:32,684	line32      	INFO    :请求时间:2019-07-03-17_26_31	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'key': '型号', 'value': 'G70F20CN1L-DG(B0)', 'productId': '57'}
+2019-07-03 17:26:32,750	line32      	INFO    :返回时间:2019-07-03-17_26_31	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 17:26:31","key":"型号","merchantCode":"0185","productId":57,"updateTime":"2019-07-03 17:26:31","value":"G70F20CN1L-DG(B0)"}}
+2019-07-03 17:26:32,750	line32      	INFO    :请求时间:2019-07-03-17_26_31	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'key': '颜色', 'value': '黑色', 'productId': '57'}
+2019-07-03 17:26:32,816	line32      	INFO    :返回时间:2019-07-03-17_26_31	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 17:26:31","key":"颜色","merchantCode":"0185","productId":57,"updateTime":"2019-07-03 17:26:31","value":"黑色"}}
+2019-07-03 17:26:32,816	line32      	INFO    :请求时间:2019-07-03-17_26_31	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'key': '操控方式', 'value': '电脑版', 'productId': '57'}
+2019-07-03 17:26:32,881	line32      	INFO    :返回时间:2019-07-03-17_26_31	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 17:26:31","key":"操控方式","merchantCode":"0185","productId":57,"updateTime":"2019-07-03 17:26:31","value":"电脑版"}}
+2019-07-03 17:26:32,881	line32      	INFO    :请求时间:2019-07-03-17_26_31	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'key': '底盘类型', 'value': '平板式', 'productId': '57'}
+2019-07-03 17:26:32,950	line32      	INFO    :返回时间:2019-07-03-17_26_31	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 17:26:31","key":"底盘类型","merchantCode":"0185","productId":57,"updateTime":"2019-07-03 17:26:31","value":"平板式"}}
+2019-07-03 17:26:32,950	line32      	INFO    :请求时间:2019-07-03-17_26_31	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'key': '内胆材质', 'value': '纳米银内胆', 'productId': '57'}
+2019-07-03 17:26:33,022	line32      	INFO    :返回时间:2019-07-03-17_26_31	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 17:26:31","key":"内胆材质","merchantCode":"0185","productId":57,"updateTime":"2019-07-03 17:26:31","value":"纳米银内胆"}}
+2019-07-03 17:26:33,022	line32      	INFO    :请求时间:2019-07-03-17_26_31	请求地址:http://operation-pc-qa.eslink.net.cn/etbc/product/saveProductParamet	请求参数:{'key': '实际容量', 'value': '20L', 'productId': '57'}
+2019-07-03 17:26:33,096	line32      	INFO    :返回时间:2019-07-03-17_26_31	返回参数:{"message":"运行正确","responseCode":"100000","result":{"createTime":"2019-07-03 17:26:31","key":"实际容量","merchantCode":"0185","productId":57,"updateTime":"2019-07-03 17:26:31","value":"20L"}}
+2019-07-03 17:26:33,098	line32      	INFO    :用例运行结束  

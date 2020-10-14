@@ -1,0 +1,1850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>自动化测试报告,测试结果如下：</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.3"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+<style type="text/css" media="screen">
+body        { font-family: verdana, arial, helvetica, sans-serif; font-size: 80%; }
+table       { font-size: 100%; }
+pre         { }
+
+/* -- heading ---------------------------------------------------------------------- */
+h1 {
+	font-size: 16pt;
+	color: gray;
+}
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .attribute {
+    margin-top: 1ex;
+    margin-bottom: 0;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- css div popup ------------------------------------------------------------------------ */
+a.popup_link {
+}
+
+a.popup_link:hover {
+    color: red;
+}
+.img{
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+    border: 2px solid #777;
+}
+
+.screenshots {
+    z-index: 100;
+	position:absolute;
+	left: 23%;
+	top: 20%;
+	display: none;
+}
+.close_shots {
+	position:absolute;
+	top:0; left:98%;
+	z-index:99;
+	width:20px;
+}
+.popup_window {
+    display: none;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    /*border: solid #627173 1px; */
+    padding: 10px;
+    background-color: #E6E6D6;
+    font-family: "Lucida Console", "Courier New", Courier, monospace;
+    text-align: left;
+    font-size: 8pt;
+    width: 500px;
+}
+
+}
+/* -- report ------------------------------------------------------------------------ */
+#show_detail_line {
+    margin-top: 3ex;
+    margin-bottom: 1ex;
+}
+#result_table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #777;
+}
+#header_row {
+    font-weight: bold;
+    color: white;
+    background-color: #777;
+}
+#result_table td {
+    border: 1px solid #777;
+    padding: 2px;
+}
+#total_row  { font-weight: bold; }
+.passClass  { background-color: #6c6; }
+.failClass  { background-color: #c60; }
+.errorClass { background-color: #c00; }
+.passCase   { color: #6c6; }
+.failCase   { color: #c60; font-weight: bold; }
+.errorCase  { color: #c00; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+
+
+/* -- ending ---------------------------------------------------------------------- */
+#ending {
+}
+
+
+.piechart{
+    position:absolute;  ;
+    top:20px;
+    left:300px;
+    width: 200px;
+    float: left;
+    display:  inline;
+}
+
+
+</style>
+
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+output_list = Array();
+
+/* level - 0:Summary; 1:Failed; 2:All */
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level > 1) {
+                tr.className = '';
+            }
+            else {
+                tr.className = 'hiddenRow';
+            }
+        }
+    }
+}
+
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        if (toHide) {
+            document.getElementById('div_'+tid).style.display = 'none'
+            document.getElementById(tid).className = 'hiddenRow';
+        }
+        else {
+            document.getElementById(tid).className = '';
+        }
+    }
+}
+
+
+function showTestDetail(div_id){
+    var details_div = document.getElementById(div_id)
+    var displayState = details_div.style.display
+    // alert(displayState)
+    if (displayState != 'block' ) {
+        displayState = 'block'
+        details_div.style.display = 'block'
+    }
+    else {
+        details_div.style.display = 'none'
+    }
+}
+
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+
+function drawCircle(pass, fail, error){
+    var color = ["#6c6","#c60","#c00"];
+    var data = [pass,fail,error];
+    var text_arr = ["pass", "fail", "error"];
+
+    var canvas = document.getElementById("circle");
+    var ctx = canvas.getContext("2d");
+    var startPoint=0;
+    var width = 20, height = 10;
+    var posX = 112 * 2 + 20, posY = 30;
+    var textX = posX + width + 5, textY = posY + 10;
+    for(var i=0;i<data.length;i++){
+        ctx.fillStyle = color[i];
+        ctx.beginPath();
+        ctx.moveTo(112,84);
+        ctx.arc(112,84,84,startPoint,startPoint+Math.PI*2*(data[i]/(data[0]+data[1]+data[2])),false);
+        ctx.fill();
+        startPoint += Math.PI*2*(data[i]/(data[0]+data[1]+data[2]));
+        ctx.fillStyle = color[i];
+        ctx.fillRect(posX, posY + 20 * i, width, height);
+        ctx.moveTo(posX, posY + 20 * i);
+        ctx.font = 'bold 14px';
+        ctx.fillStyle = color[i];
+        var percent = text_arr[i] + ":"+data[i];
+        ctx.fillText(percent, textX, textY + 20 * i);
+
+    }
+}
+
+function show_shots(obj) {
+	obj.nextElementSibling.style.display="block";
+
+}
+
+function close_shots(obj) {
+	obj.parentElement.style.display="none";
+}
+
+</script>
+<div class="piechart">
+    <div>
+        <canvas id="circle" width="350" height="168" </canvas>
+    </div>
+</div>
+<div class='heading'>
+<h1>自动化测试报告,测试结果如下：</h1>
+<p class='attribute'><strong>开始时间:</strong> 2018-06-26 18:03:01</p>
+<p class='attribute'><strong>耗时:</strong> 0:01:30.570000</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>34 <span class="tj failCase">Failure</span>5</p>
+
+<p class='description'>用例执行情况：</p>
+</div>
+
+
+
+<p id='show_detail_line'>显示
+<a href='javascript:showCase(0)'>概要</a>
+<a href='javascript:showCase(1)'>失败</a>
+<a href='javascript:showCase(2)'>所有</a>
+</p>
+
+<table id='result_table'>
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row'>
+    <td>测试组/测试用例</td>
+    <td>总数</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>视图</td>
+    <td>错误截图</td>
+</tr>
+
+<tr class='failClass'>
+    <td>E_pos_clientManager_createActivationCode.clientManager_createActivationC</td>
+    <td>16</td>
+    <td>14</td>
+    <td>2</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1',16)">详情</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_1: 正确的条件,成功创建一个激活码</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a></span>
+
+    <div id='div_pt1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=2BE6663EFB15F78D6DFEE7F7AD34247C for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007371|1530007371 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_001 描述：正确的条件,成功创建一个激活码  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'createNum': '1', 'ownerShip': '0147', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司a', 'subMerchantName': '质量管理部A'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.142886s 	用例测试结果:t_001----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_10: 创建激活码:输入项字段的特定类型校验：merchantCode</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        通过</a></span>
+
+    <div id='div_pt1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=9573D04346A497C478D87A0C0AA80F30 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007372|1530007372 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_010 描述：输入项字段的特定类型校验：merchantCode  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.46', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': 'ABC', 'createNum': '1', 'ownerShip': '0147', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"101001","message":"参数异常( 主商户编号只能为数字 )","result":null}
+2018-06-26-18_03_00 	接口请求时间：1.399622s 	用例测试结果:t_010----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_11: 创建激活码:输入项字段的特定类型校验：subMerchantCode</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        通过</a></span>
+
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=1D56AA63694ABC696EB60639B988F313 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007373|1530007373 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_011 描述：输入项字段的特定类型校验：subMerchantCode  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.47', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0001', 'createNum': '1', 'ownerShip': '0147', 'subMerchantCode': '+=?%+', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"101001","message":"参数异常( 子商户编号只能为数字 )","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.088967s 	用例测试结果:t_011----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_12: 创建激活码:输入项字段的特定类型校验：creatNum</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        通过</a></span>
+
+    <div id='div_pt1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=CD4B56FA5D94984F80872EF53792930E for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007373|1530007373 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_012 描述：输入项字段的特定类型校验：creatNum  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.48', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'createNum': 'abc', 'ownerShip': '0147', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"900000","message":"系统繁忙，稍后再试!","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.098774s 	用例测试结果:t_012----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_13: 创建激活码:输入项字段的特定类型校验：ownerShip</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        通过</a></span>
+
+    <div id='div_pt1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=8D277554E79611A9D586C39F6F6A1E0D for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007374|1530007374 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_013 描述：输入项字段的特定类型校验：ownerShip  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.47', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'createNum': '1', 'ownerShip': '01A+%', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"101001","message":"参数异常( 租户编号只能为数字 )","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.087492s 	用例测试结果:t_013----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_14: 创建激活码:creatNum创建个数边界值：0</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        通过</a></span>
+
+    <div id='div_pt1.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.6: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=74A73148D22B6FD825598CDB257D58B1 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007374|1530007374 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_014 描述：creatNum创建个数边界值：0  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.44', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'createNum': '0', 'ownerShip': '0147', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"201010","message":"激活码创建数量最少一个，最多不能超过50个","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.086418s 	用例测试结果:t_014----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_15: 创建激活码:creatNum创建个数边界值：51</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        通过</a></span>
+
+    <div id='div_pt1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.7: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=13CFDD4461B70BC689A840857D243FBE for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007374|1530007374 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_015 描述：creatNum创建个数边界值：51  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.45', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'createNum': '51', 'ownerShip': '0147', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"201010","message":"激活码创建数量最少一个，最多不能超过50个","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.086336s 	用例测试结果:t_015----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_16: 创建激活码:特殊字符的校验</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
+        通过</a></span>
+
+    <div id='div_pt1.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.8: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=6298AB9694259BDF44D3972CDBC231D5 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007374|1530007374 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_016 描述：特殊字符的校验  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.46', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'createNum': '1', 'ownerShip': '0147', 'subMerchantCode': '0001', 'merchantName': '/t易联云计算(杭州)有限责任公司/n', 'subMerchantName': '？质量管理部/r'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.100734s 	用例测试结果:t_016----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.9' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_2: 创建激活码:没有条件调用接口</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9')" >
+        通过</a></span>
+
+    <div id='div_pt1.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.9: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=92DB18254A0FEEFA2B3E29EE6862D59D for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007374|1530007374 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_002 描述：没有条件调用接口  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.37', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为： 	body内容为：{}
+页面返回信息：{"responseCode":"201012","message":"主商户编号不能为空","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.12272s 	用例测试结果:t_002----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_3: 创建激活码:必输项检查：merchantCode</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10')" >
+        通过</a></span>
+
+    <div id='div_pt1.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.10: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=DC6F254DD20D4C136BE7842416B95044 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007375|1530007375 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_003 描述：必输项检查：merchantCode  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.37', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'subMerchantCode': '0001', 'createNum': '1', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部', 'ownerShip': '0147'}
+页面返回信息：{"responseCode":"201012","message":"主商户编号不能为空","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.090003s 	用例测试结果:t_003----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_4: 创建激活码:非必输项检查：ownerShip</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.11')" >
+        通过</a></span>
+
+    <div id='div_pt1.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.11: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=4D8042AC3E3D6035C43836E1CB25CFB2 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007375|1530007375 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_004 描述：非必输项检查：ownerShip  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.38', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部', 'createNum': '1'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.09367s 	用例测试结果:t_004----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.12' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_5: 创建激活码:必输项检查：creatNum</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.12')" >
+        通过</a></span>
+
+    <div id='div_pt1.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.12: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=5A419261C1280DA534E53809ADFFF219 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007375|1530007375 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_005 描述：必输项检查：creatNum  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.39', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部', 'ownerShip': '0147'}
+页面返回信息：{"responseCode":"201010","message":"激活码创建数量最少一个，最多不能超过50个","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.091173s 	用例测试结果:t_005----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='ft1.13' class='none'>
+    <td ><div class='testcase'>test_SearchActionCode_6: 创建激活码:输入项float字段类型校验:merchantCode</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status failCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.13')" >
+        失败</a></span>
+
+    <div id='div_ft1.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.13: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=47B4C7D14304E7E747804C9D6F560999 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007375|1530007375 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_006 描述：输入项float字段类型校验:merchantCode  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.40', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '00.19', 'createNum': '1', 'ownerShip': '0147', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":null}
+2018-06-26-18_03_00 	 接口请求时间：0.108198s 	用例测试结果:t_006----&gt;fail  {"responseCode":"201012","message":"主商户编号不能为空","result":null} Not in {"responseCode":"100000","message":"运行正确","result":null}
+Traceback (most recent call last):
+  File "d:\pycharm-5.0.4\Report_test\Four_jiekou\case\Test_Environment\E_pos\E_pos_clientManager_createActivationCode.py", line 113, in test_SearchActionCode_6
+    self.assertTrue(res)
+AssertionError: False is not true
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='ft1.14' class='none'>
+    <td ><div class='testcase'>test_SearchActionCode_7: 创建激活码:输入项int字段类型校验:creatNum</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status failCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.14')" >
+        失败</a></span>
+
+    <div id='div_ft1.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.14: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=EB3DCF4A207B3C8ACC145E9A701E8E97 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007376|1530007376 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_007 描述：输入项int字段类型校验:creatNum  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.41', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'createNum': '1.0', 'ownerShip': '0147', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"900000","message":"系统繁忙，稍后再试!","result":null}
+2018-06-26-18_03_00 	 接口请求时间：0.089297s 	用例测试结果:t_007----&gt;fail  {"responseCode":"201010","message":"激活码创建数量最少一个，最多不能超过50个","result":null} Not in {"responseCode":"900000","message":"系统繁忙，稍后再试!","result":null}
+Traceback (most recent call last):
+  File "d:\pycharm-5.0.4\Report_test\Four_jiekou\case\Test_Environment\E_pos\E_pos_clientManager_createActivationCode.py", line 128, in test_SearchActionCode_7
+    self.assertTrue(res)
+AssertionError: False is not true
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.15' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_8: 创建激活码输入项float字段类型校验:ownerShip</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.15')" >
+        通过</a></span>
+
+    <div id='div_pt1.15' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.15').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.15: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=D66C39BFD907598224E0BE63514ABB2B for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007376|1530007376 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_008 描述：输入项float字段类型校验:ownerShip  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.42', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'createNum': '1', 'ownerShip': '0147.00', 'subMerchantCode': '0001', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.102785s 	用例测试结果:t_008----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.16' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_9: 创建激活码:输入项float字段类型校验:subMerchantCode</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.16')" >
+        通过</a></span>
+
+    <div id='div_pt1.16' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.16').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.16: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=098ABA69B718D4824BDA52928C112AD7 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007376|1530007376 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_009 描述：输入项float字段类型校验:subMerchantCode  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.43', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientManager/createActivationCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '0019', 'createNum': '1', 'ownerShip': '0147', 'subMerchantCode': '000.1', 'merchantName': '易联云计算(杭州)有限责任公司', 'subMerchantName': '质量管理部'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.099125s 	用例测试结果:t_009----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr class='failClass'>
+    <td>E_pos_clientSet_addClientInfo.clientSet_addClientInfo</td>
+    <td>7</td>
+    <td>5</td>
+    <td>2</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',7)">详情</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='ft2.1' class='none'>
+    <td ><div class='testcase'>test_addClientInfo_1: 新增设备版本信息，正确的数据</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status failCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+        失败</a></span>
+
+    <div id='div_ft2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.1: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=5015AE91D0068C71B96C3D526A1295AF for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007376|1530007376 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_001 描述：新增设备版本信息，正确的数据  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addClientInfo 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'version': '1.1.1', 'updateRemarks[]': '我的case', 'type': 'w_widget'}
+页面返回信息：{"responseCode":"900000","message":"系统繁忙，稍后再试!","result":null}
+2018-06-26-18_03_00 	 接口请求时间：0.087194s 	用例测试结果:t_001----&gt;fail  "responseCode":"100000","message":"运行正确" Not in {"responseCode":"900000","message":"系统繁忙，稍后再试!","result":null}
+Traceback (most recent call last):
+  File "d:\pycharm-5.0.4\Report_test\Four_jiekou\case\Test_Environment\E_pos\E_pos_clientSet_addClientInfo.py", line 38, in test_addClientInfo_1
+    self.assertTrue(res)
+AssertionError: False is not true
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='ft2.2' class='none'>
+    <td ><div class='testcase'>test_addClientInfo_2: 新增设备版本信息，版本号输入错误字符类型：ABC</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status failCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
+        失败</a></span>
+
+    <div id='div_ft2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft2.2: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=29F1793E22697A2E7A27A05194122EB3 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007376|1530007376 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_002 描述：新增设备版本信息，版本号输入错误字符类型：ABC  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addClientInfo 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'version': 'A.B.C', 'updateRemarks[]': '我的case', 'type': 'w_widget'}
+页面返回信息：{"responseCode":"201222","message":"设备版本号格式不对( 版本号只能为数字 )","result":null}
+2018-06-26-18_03_00 	 接口请求时间：0.087103s 	用例测试结果:t_002----&gt;fail  {"responseCode":"201222","message":"设备版本号格式不对( 设备版本号长度不符合规则 )","result":null} Not in {"responseCode":"201222","message":"设备版本号格式不对( 版本号只能为数字 )","result":null}
+Traceback (most recent call last):
+  File "d:\pycharm-5.0.4\Report_test\Four_jiekou\case\Test_Environment\E_pos\E_pos_clientSet_addClientInfo.py", line 52, in test_addClientInfo_2
+    self.assertTrue(res)
+AssertionError: False is not true
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.3' class='hiddenRow'>
+    <td ><div class='testcase'>test_addClientInfo_3: 新增设备版本信息，版本号输入浮点型：0.1</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >
+        通过</a></span>
+
+    <div id='div_pt2.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.3: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=90D4A4CB7A3C3812F90D79DA3781E96F for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007377|1530007377 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_003 描述：新增设备版本信息，版本号输入浮点型：0.1  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addClientInfo 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'version': '0.1.0.1.1', 'updateRemarks[]': '我的case', 'type': 'w_widget'}
+页面返回信息：{"responseCode":"201222","message":"设备版本号格式不对( 设备版本号长度不符合规则 )","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.085235s 	用例测试结果:t_003----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.4' class='hiddenRow'>
+    <td ><div class='testcase'>test_addClientInfo_4: 新增设备版本信息，版本号输入字符串类型：01</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.4')" >
+        通过</a></span>
+
+    <div id='div_pt2.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.4: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=C3EBA10A4D62277B7E0825313E58E794 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007377|1530007377 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_004 描述：新增设备版本信息，版本号输入字符串类型：01  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addClientInfo 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'version': '01.01.01', 'updateRemarks[]': '我的case', 'type': 'w_widget'}
+页面返回信息：{"responseCode":"900000","message":"系统繁忙，稍后再试!","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.088536s 	用例测试结果:t_004----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.5' class='hiddenRow'>
+    <td ><div class='testcase'>test_addClientInfo_5: 新增设备版本信息，版本号少传一位：1.0.</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.5')" >
+        通过</a></span>
+
+    <div id='div_pt2.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.5: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=5AA2E870194DEA1EBABD781F6D1D0EEF for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007377|1530007377 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_005 描述：新增设备版本信息，版本号少传一位：1.0.  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addClientInfo 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'version': '1.1.', 'updateRemarks[]': '我的case', 'type': 'w_widget'}
+页面返回信息：{"responseCode":"900000","message":"系统繁忙，稍后再试!","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.099513s 	用例测试结果:t_005----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.6' class='hiddenRow'>
+    <td ><div class='testcase'>test_addClientInfo_6: 新增设备版本信息，版本号输入最大字符：99999.99999.99999</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.6')" >
+        通过</a></span>
+
+    <div id='div_pt2.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.6: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=E50118240A9610AB0361E376AFEF96EE for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007377|1530007377 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_006 描述：新增设备版本信息，版本号输入最大字符：99999.99999.99999  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addClientInfo 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'version': '99999.99999.99999', 'updateRemarks[]': '我的case', 'type': 'w_widget'}
+页面返回信息：{"responseCode":"900000","message":"系统繁忙，稍后再试!","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.091157s 	用例测试结果:t_006----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt2.7' class='hiddenRow'>
+    <td ><div class='testcase'>test_addClientInfo_7: 新增设备版本信息，设备类型错误</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.7')" >
+        通过</a></span>
+
+    <div id='div_pt2.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt2.7: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=47DD91865D023DBE86906C1F93189A68 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007378|1530007378 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_007 描述：新增设备版本信息，设备类型错误  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addClientInfo 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'version': '1.1.1', 'updateRemarks[]': '我的case', 'type': 'w_widget1'}
+页面返回信息：{"responseCode":"900000","message":"系统繁忙，稍后再试!","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.108075s 	用例测试结果:t_007----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr class='failClass'>
+    <td>E_pos_clientSet_addmerchantMenu.clientSet_addmerchantMenu</td>
+    <td>8</td>
+    <td>7</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c3',8)">详情</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='ft3.1' class='none'>
+    <td ><div class='testcase'>test_addmerchantMenu_1: 新增商户菜单配置，商户菜单重复的情况</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status failCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft3.1')" >
+        失败</a></span>
+
+    <div id='div_ft3.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft3.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft3.1: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=80AF7DB1E60FA771A5E31660859ED0D0 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007378|1530007378 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_001 描述：新增商户菜单配置，商户菜单重复的情况  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addmerchantMenu 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '1001', 'voucherConfig': '8', 'menu': '63', 'subMerchantCode': '0012', 'codePrintType': '3', 'type': 'hdx068'}
+页面返回信息：{"responseCode":"201017","message":"商户配置信息已经存在","result":null}
+2018-06-26-18_03_00 	 接口请求时间：0.098702s 	用例测试结果:t_001----&gt;fail  {"responseCode":"201223","message":"添加商户信息不完善请检查","result":null} Not in {"responseCode":"201017","message":"商户配置信息已经存在","result":null}
+Traceback (most recent call last):
+  File "d:\pycharm-5.0.4\Report_test\Four_jiekou\case\Test_Environment\E_pos\E_pos_clientSet_addmerchantMenu.py", line 38, in test_addmerchantMenu_1
+    self.assertTrue(res)
+AssertionError: False is not true
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt3.2' class='hiddenRow'>
+    <td ><div class='testcase'>test_addmerchantMenu_2: 商户菜单配置必选项缺少：merchantCode</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.2')" >
+        通过</a></span>
+
+    <div id='div_pt3.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.2: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=E6F2AF8D77253240EE80DBAAD343479A for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007378|1530007378 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_002 描述：商户菜单配置必选项缺少：merchantCode  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addmerchantMenu 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '', 'voucherConfig': '8', 'menu': '63', 'subMerchantCode': '0012', 'codePrintType': '3', 'type': 'hdx068'}
+页面返回信息：{"responseCode":"201223","message":"添加商户信息不完善请检查","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.079628s 	用例测试结果:t_002----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt3.3' class='hiddenRow'>
+    <td ><div class='testcase'>test_addmerchantMenu_3: 商户菜单配置必选项缺少：type</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.3')" >
+        通过</a></span>
+
+    <div id='div_pt3.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.3: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=86CE4314A2AA4D467EC8690DB3BCC876 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007378|1530007378 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_003 描述：商户菜单配置必选项缺少：type  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addmerchantMenu 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '1001', 'voucherConfig': '8', 'menu': '63', 'subMerchantCode': '0012', 'codePrintType': '3', 'type': ''}
+页面返回信息：{"responseCode":"201223","message":"添加商户信息不完善请检查","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.078118s 	用例测试结果:t_003----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt3.4' class='hiddenRow'>
+    <td ><div class='testcase'>test_addmerchantMenu_4: 商户菜单配置必选项缺少：menu</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.4')" >
+        通过</a></span>
+
+    <div id='div_pt3.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.4: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=F960D78826205EDF25006BF5309CF5B0 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007378|1530007378 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_004 描述：商户菜单配置必选项缺少：menu  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addmerchantMenu 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '10011', 'voucherConfig': '8', 'menu': '', 'subMerchantCode': '00122', 'codePrintType': '3', 'type': 'hdx068'}
+页面返回信息：{"responseCode":"201223","message":"添加商户信息不完善请检查","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.090513s 	用例测试结果:t_004----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt3.5' class='hiddenRow'>
+    <td ><div class='testcase'>test_addmerchantMenu_5: 商户菜单配置必选项缺少：voucherConfig</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.5')" >
+        通过</a></span>
+
+    <div id='div_pt3.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.5: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=AF9C73CDD43D1C5DAFD2560F98ED75F4 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007379|1530007379 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_005 描述：商户菜单配置必选项缺少：voucherConfig  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addmerchantMenu 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '1001', 'voucherConfig': '', 'menu': '63', 'subMerchantCode': '0012', 'codePrintType': '3', 'type': 'hdx068'}
+页面返回信息：{"responseCode":"201223","message":"添加商户信息不完善请检查( 请选择二维码打印配置 )","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.094904s 	用例测试结果:t_005----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt3.6' class='hiddenRow'>
+    <td ><div class='testcase'>test_addmerchantMenu_6: 商户菜单配置必选项缺少：codePrintType</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.6')" >
+        通过</a></span>
+
+    <div id='div_pt3.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.6: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=55A1643E605C110269E965C42B20BCA0 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007379|1530007379 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_006 描述：商户菜单配置必选项缺少：codePrintType  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addmerchantMenu 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '1001', 'voucherConfig': '8', 'menu': '63', 'subMerchantCode': '0012', 'codePrintType': '', 'type': 'hdx068'}
+页面返回信息：{"responseCode":"201223","message":"添加商户信息不完善请检查( 请选择收款凭证打印配置 )","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.091612s 	用例测试结果:t_006----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt3.7' class='hiddenRow'>
+    <td ><div class='testcase'>test_addmerchantMenu_7: 商户编码最大字符数：4</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.7')" >
+        通过</a></span>
+
+    <div id='div_pt3.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.7: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=DFF39984D9BAFFD02629E19348200DF1 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007379|1530007379 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_007 描述：商户编码最大字符数：4  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addmerchantMenu 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '10011', 'voucherConfig': '8', 'menu': '63', 'subMerchantCode': '0012', 'codePrintType': '3', 'type': 'hdx068'}
+页面返回信息：{"responseCode":"201224","message":"商户编号过长，主商户4位/子商户10位","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.121473s 	用例测试结果:t_007----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt3.8' class='hiddenRow'>
+    <td ><div class='testcase'>test_addmerchantMenu_8: 子商户编码最大字符数：10</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.8')" >
+        通过</a></span>
+
+    <div id='div_pt3.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt3.8: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=65AB645D060CA26D7889A68B1CF15E54 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007379|1530007379 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_008 描述：子商户编码最大字符数：10  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/addmerchantMenu 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '1001', 'voucherConfig': '8', 'menu': '63', 'subMerchantCode': '001223212131', 'codePrintType': '3', 'type': 'hdx068'}
+页面返回信息：{"responseCode":"201224","message":"商户编号过长，主商户4位/子商户10位","result":null}
+2018-06-26-18_03_00 	接口请求时间：0.088378s 	用例测试结果:t_008----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>E_pos_clientSet_searchActionCode.clientSet_searchActionCode</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c4',3)">详情</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_1: 激活码列表查询，正确输入数据后查询</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.1')" >
+        通过</a></span>
+
+    <div id='div_pt4.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt4.1: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=BDCCAE1B4827C7711B377B5180D10B17 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007379|1530007379 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_001 描述：激活码列表查询，正确输入数据后查询  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive', 'Content-Length': '629'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/searchActionCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '4000', 'ownerShip': '4000', 'subMerchantCode': '00001', 'status': '1', 'merchantName': '波士顿大学', 'subMerchantName': '子学院'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":{"pageNum":1,"pageSize":15,"size":2,"startRow":1,"endRow":2,"total":2,"pages":1,"list":[{"pageNum":1,"pageSize":15,"merchantCode":"4000--波士顿大学","activationCode":"2651-6870-3552-5627","status":"未使用","createTime":"2018-04-18\n\t\t11:27:58","useTime":null,"subMerchantCode":"00001--子学院","ownerShip":"4000","merchantName":"波士顿大学","subMerchantName":"子学院"},{"pageNum":1,"pageSize":15,"merchantCode":"4000--波士顿大学","activationCode":"0378-6998-5430-3177","status":"未使用","createTime":"2018-04-18\n\t\t11:27:19","useTime":null,"subMerchantCode":"00001--子学院","ownerShip":"4000","merchantName":"波士顿大学","subMerchantName":"子学院"}],"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"sum":null,"num":null,"firstPage":1,"lastPage":1}}
+2018-06-26-18_03_00 	接口请求时间：0.201767s 	用例测试结果:t_001----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt4.2' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_2: 激活码列表查询，错误查询条件:status=0</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.2')" >
+        通过</a></span>
+
+    <div id='div_pt4.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt4.2: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=36E8C47FAC6062F66B14A31E22546BBB for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007380|1530007380 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_002 描述：激活码列表查询，错误查询条件:status=0  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive', 'Content-Length': '630'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/searchActionCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '4000', 'ownerShip': '4000', 'subMerchantCode': '00001', 'status': '0', 'merchantName': '波士顿大学', 'subMerchantName': '子学院'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":{"pageNum":0,"pageSize":15,"size":0,"startRow":0,"endRow":0,"total":0,"pages":0,"list":[],"prePage":0,"nextPage":0,"isFirstPage":false,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[],"navigateFirstPage":0,"navigateLastPage":0,"sum":null,"num":null,"firstPage":0,"lastPage":0}}
+2018-06-26-18_03_00 	接口请求时间：0.090717s 	用例测试结果:t_002----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt4.3' class='hiddenRow'>
+    <td ><div class='testcase'>test_SearchActionCode_3: 缺少一个查询参数：status</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.3')" >
+        通过</a></span>
+
+    <div id='div_pt4.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt4.3: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=8D253FA6F93588F13725EE9AF2937ED7 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007380|1530007380 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_003 描述：缺少一个查询参数：status  -------------
+2018-06-26-18_03_00
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive', 'Content-Length': '631'} 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/searchActionCode 
+ 请求参数：None
+2018-06-26-18_03_00
+ post请求body类型为：data 	body内容为：{'merchantCode': '4000', 'subMerchantCode': '00001', 'merchantName': '波士顿大学', 'subMerchantName': '子学院', 'ownerShip': '4000'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":{"pageNum":1,"pageSize":15,"size":2,"startRow":1,"endRow":2,"total":2,"pages":1,"list":[{"pageNum":1,"pageSize":15,"merchantCode":"4000--波士顿大学","activationCode":"2651-6870-3552-5627","status":"未使用","createTime":"2018-04-18\n\t\t11:27:58","useTime":null,"subMerchantCode":"00001--子学院","ownerShip":"4000","merchantName":"波士顿大学","subMerchantName":"子学院"},{"pageNum":1,"pageSize":15,"merchantCode":"4000--波士顿大学","activationCode":"0378-6998-5430-3177","status":"未使用","createTime":"2018-04-18\n\t\t11:27:19","useTime":null,"subMerchantCode":"00001--子学院","ownerShip":"4000","merchantName":"波士顿大学","subMerchantName":"子学院"}],"prePage":0,"nextPage":0,"isFirstPage":true,"isLastPage":true,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":8,"navigatepageNums":[1],"navigateFirstPage":1,"navigateLastPage":1,"sum":null,"num":null,"firstPage":1,"lastPage":1}}
+2018-06-26-18_03_00 	接口请求时间：0.098148s 	用例测试结果:t_003----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>E_pos_clientSet_uploadMenuIcon.clientSet_uploadMenuIcon</td>
+    <td>5</td>
+    <td>5</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c5',5)">详情</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt5.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_updateMenu_1: 添加菜单</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.1')" >
+        通过</a></span>
+
+    <div id='div_pt5.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.1: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=5B038FDC40F7B5123C6DB7E7D5227EC7 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007380|1530007380 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_001 描述：上传图片：PNG格式、34KB  -------------
+2018-06-26-18_03_01
+ 请求头部：None 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/uploadMenuIcon 
+ 请求参数：None
+2018-06-26-18_03_01
+ post请求body类型为：files 	files内容为：{'file': &lt;_io.BufferedReader name='C:\\Users\\Administrator\\Desktop\\eslink\\燃气公司官网\\万州官网设计\\图片管理\\153KB.png'&gt;}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":{"pageNum":1,"pageSize":15,"posMenuRemark":null,"posMenuName":null,"id":"7c090fc1e62846078557d262dc03e84d","menuPicName":"1530007381079.png","printType":null,"menuCode":null,"picUrl":"http://eslink-epos.oss-cn-beijing.aliyuncs.com/1530007381079.png?Expires=1531834772&amp;OSSAccessKeyId=LTAIBO1MMiycYZjV&amp;Signature=RWWgHmCiCejzy5x%2Fmasp4lHaL08%3D","menuStatus":"0","createTime":null,"type":null}}
+2018-06-26-18_03_01 	接口请求时间：4.776585s 	用例测试结果:t_001----&gt;pass 
+-------------正在执行用例：t_001 描述：新增菜单，正确的数据  -------------
+2018-06-26-18_03_01
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url: http://epos-pc-qa.eslink.net.cn/clientSet/updateMenu 
+ 请求参数：None
+2018-06-26-18_03_01
+ post请求body类型为：data 	body内容为：{'posMenuRemark': '测试', 'id': '7c090fc1e62846078557d262dc03e84d', 'posMenuName': '菜单名称'}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":null}
+2018-06-26-18_03_01 	接口请求时间：0.139878s 	用例测试结果:t_001----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt5.2' class='hiddenRow'>
+    <td ><div class='testcase'>test_updateMenu_2: 新增菜单，缺少参数posMenuName</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.2')" >
+        通过</a></span>
+
+    <div id='div_pt5.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.2: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=925AF8A1947E1248883ACC5B4D3A127A for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007385|1530007385 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_001 描述：上传图片：PNG格式、34KB  -------------
+2018-06-26-18_03_01
+ 请求头部：None 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/uploadMenuIcon 
+ 请求参数：None
+2018-06-26-18_03_01
+ post请求body类型为：files 	files内容为：{'file': &lt;_io.BufferedReader name='C:\\Users\\Administrator\\Desktop\\eslink\\燃气公司官网\\万州官网设计\\图片管理\\153KB.png'&gt;}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":{"pageNum":1,"pageSize":15,"posMenuRemark":null,"posMenuName":null,"id":"98e94d4c0b1747289c42d85922dcae19","menuPicName":"1530007386116.png","printType":null,"menuCode":null,"picUrl":"http://eslink-epos.oss-cn-beijing.aliyuncs.com/1530007386116.png?Expires=1531834777&amp;OSSAccessKeyId=LTAIBO1MMiycYZjV&amp;Signature=dEaUFVfVR68JxR3c5RAK4AORRLg%3D","menuStatus":"0","createTime":null,"type":null}}
+2018-06-26-18_03_01 	接口请求时间：4.711196s 	用例测试结果:t_001----&gt;pass 
+-------------正在执行用例：t_002 描述：新增菜单，缺少参数posMenuName  -------------
+2018-06-26-18_03_01
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url: http://epos-pc-qa.eslink.net.cn/clientSet/updateMenu 
+ 请求参数：None
+2018-06-26-18_03_01
+ post请求body类型为：data 	body内容为：{'posMenuRemark': '测试', 'id': '98e94d4c0b1747289c42d85922dcae19', 'posMenuName': ''}
+页面返回信息：{"responseCode":"201020","message":"菜单或ID为空","result":null}
+2018-06-26-18_03_01 	接口请求时间：0.095359s 	用例测试结果:t_002----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt5.3' class='hiddenRow'>
+    <td ><div class='testcase'>test_updateMenu_3: 添加菜单缺少参数id</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.3')" >
+        通过</a></span>
+
+    <div id='div_pt5.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.3: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=B72FFCB60CCA8989FF7785EA1267C25D for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007392|1530007392 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_003 描述：新增菜单，缺少参数id  -------------
+2018-06-26-18_03_01
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url: http://epos-pc-qa.eslink.net.cn/clientSet/updateMenu 
+ 请求参数：None
+2018-06-26-18_03_01
+ post请求body类型为：data 	body内容为：{'posMenuRemark': '测试', 'posMenuName': '菜单名称'}
+页面返回信息：{"responseCode":"201020","message":"菜单或ID为空","result":null}
+2018-06-26-18_03_01 	接口请求时间：0.083023s 	用例测试结果:t_003----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt5.4' class='hiddenRow'>
+    <td ><div class='testcase'>test_updateMenu_4: 参数最大字符数验证posMenuName:10</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.4')" >
+        通过</a></span>
+
+    <div id='div_pt5.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.4: &lt;RequestsCookieJar[&lt;Cookie JSESSIONID=A1C6DF81F75CD49C96C91F6D92FAA1E8 for ecc-qa.eslink.net.cn/&gt;, &lt;Cookie SERVERID=9b368a435f3a314b278cdff6a43d4bd6|1530007393|1530007393 for ecc-qa.eslink.net.cn/&gt;]&gt;
+-------------正在执行用例：t_001 描述：上传图片：PNG格式、34KB  -------------
+2018-06-26-18_03_01
+ 请求头部：None 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/uploadMenuIcon 
+ 请求参数：None
+2018-06-26-18_03_01
+ post请求body类型为：files 	files内容为：{'file': &lt;_io.BufferedReader name='C:\\Users\\Administrator\\Desktop\\eslink\\燃气公司官网\\万州官网设计\\图片管理\\153KB.png'&gt;}
+页面返回信息：{"responseCode":"100000","message":"运行正确","result":{"pageNum":1,"pageSize":15,"posMenuRemark":null,"posMenuName":null,"id":"9e6294f12d314ec2a91bead91a9b64d6","menuPicName":"1530007393445.png","printType":null,"menuCode":null,"picUrl":"http://eslink-epos.oss-cn-beijing.aliyuncs.com/1530007393445.png?Expires=1531834785&amp;OSSAccessKeyId=LTAIBO1MMiycYZjV&amp;Signature=enG3rBlZtnt2LGVwv4NfGNiKL24%3D","menuStatus":"0","createTime":null,"type":null}}
+2018-06-26-18_03_01 	接口请求时间：4.721589s 	用例测试结果:t_001----&gt;pass 
+-------------正在执行用例：t_004 描述：参数最大字符数验证posMenuName:10  -------------
+2018-06-26-18_03_01
+ 请求头部：{'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36', 'Connection': 'keep-alive'} 
+ 请求方式：post
+ 请求url: http://epos-pc-qa.eslink.net.cn/clientSet/updateMenu 
+ 请求参数：None
+2018-06-26-18_03_01
+ post请求body类型为：data 	body内容为：{'posMenuRemark': '测试', 'id': '9e6294f12d314ec2a91bead91a9b64d6', 'posMenuName': '菜单名称最大字符数限制'}
+页面返回信息：{"responseCode":"201116","message":"菜单名称不能超过十位","result":null}
+2018-06-26-18_03_01 	接口请求时间：0.093486s 	用例测试结果:t_004----&gt;pass 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt5.5' class='hiddenRow'>
+    <td ><div class='testcase'>test_uploadMenuIcon_3: 上传图片:jpg格式</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.5')" >
+        通过</a></span>
+
+    <div id='div_pt5.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt5.5: -------------正在执行用例：t_002 描述：上传图片：PNG格式、3.99M  -------------
+2018-06-26-18_03_01
+ 请求头部：None 
+ 请求方式：post
+ 请求url:http://epos-pc-qa.eslink.net.cn/clientSet/uploadMenuIcon 
+ 请求参数：None
+2018-06-26-18_03_01
+ post请求body类型为：files 	files内容为：{'file': &lt;_io.BufferedReader name='C:\\Users\\Administrator\\Desktop\\eslink\\燃气公司官网\\万州官网设计\\图片管理\\3.99M.png'&gt;}
+页面返回信息：&lt;!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN"&gt;
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;504 Gateway Time-out&lt;/title&gt;&lt;/head&gt;
+&lt;body bgcolor="white"&gt;
+&lt;h1&gt;504 Gateway Time-out&lt;/h1&gt;
+&lt;p&gt;The gateway did not receive a timely response from the upstream server or application.&lt;/body&gt;
+&lt;/html&gt;
+
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+    <td></td>
+</tr>
+
+<tr id='total_row'>
+    <td>统计</td>
+    <td>39</td>
+    <td>34</td>
+    <td>5</td>
+    <td>0</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+</tr>
+</table>
+<script>
+    drawCircle(34, 5, 0)
+</script>
+
+<div id='ending'>&nbsp;</div>
+
+</body>
+</html>
